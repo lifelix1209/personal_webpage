@@ -1,0 +1,204 @@
+/* ======================================================= */
+/* 1. Component Variables & Layout                         */
+/* ======================================================= */
+.contactSection {
+  /* --- Light Theme (Default) --- */
+  --accent-color: #e73700;
+  --accent-text-color: #ffffff;
+  --bg-secondary: #f3f4f6;
+  --border-color: #d1d5db;
+  --text-primary: var(--fg);      /* Use global foreground color */
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --shadow-color-hover: rgba(0, 0, 0, 0.12);
+  --shadow-color-focus: rgba(231, 55, 0, 0.3);
+
+  /* --- Layout & Global Styles --- */
+  background-color: var(--bg);    /* Use global background color */
+  padding: 80px 0;
+  min-height: calc(100vh - 80px); /* Assumes 80px Navbar height */
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* --- Dark Theme Overrides --- */
+/* When [data-theme='dark'] is on a parent, these variables are used instead */
+[data-theme='dark'] .contactSection {
+  --accent-color: #38bdf8;
+  --accent-text-color: #0f172a;
+  --bg-secondary: #1e293b;
+  --border-color: #334155;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --shadow-color-hover: rgba(0, 0, 0, 0.3);
+  --shadow-color-focus: rgba(56, 189, 248, 0.25);
+}
+
+/* ======================================================= */
+/* 2. Page Elements (Using Component Variables)            */
+/* ======================================================= */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.lineTitle {
+  position: relative;
+  text-align: center;
+  margin: 0 auto 60px auto;
+  padding-bottom: 16px;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--text-primary);
+}
+.lineTitle::before {
+  content: "";
+  position: absolute; bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  height: 4px; border-radius: 2px;
+  width: 100%;
+  background-color: var(--bg-secondary);
+  transition: background-color 0.3s ease;
+}
+.lineTitle::after {
+  content: "";
+  position: absolute; bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  height: 4px; border-radius: 2px;
+  width: 70px;
+  background-color: var(--accent-color);
+  transition: background-color 0.3s ease;
+}
+
+.hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 30px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* ======================================================= */
+/* 3. Form, Inputs, and Button                             */
+/* ======================================================= */
+.contactWrapper {
+  display: flex;
+  gap: 40px;
+}
+.formHorizontal, .directContactContainer {
+  flex: 1;
+  min-width: 0;
+}
+.formGroup {
+  margin-bottom: 20px;
+}
+.formControl {
+  width: 100%;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.formControl:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px var(--shadow-color-focus);
+}
+.formControl::placeholder {
+  color: var(--text-muted);
+}
+textarea.formControl {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.sendButton {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 32px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 9999px; /* rounded-full */
+  cursor: pointer;
+  box-shadow: 0 4px 12px -2px var(--shadow-color);
+  transition: all 0.3s ease;
+}
+.sendButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -4px var(--shadow-color-hover);
+}
+.sendButton:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px -2px var(--shadow-color);
+}
+
+/* ======================================================= */
+/* 4. Contact Info & Social Icons                          */
+/* ======================================================= */
+.contactList { list-style-type: none; padding: 0; margin: 0; }
+.listItem { display: flex; align-items: center; margin-bottom: 25px; }
+.listItem .icon { font-size: 24px; color: var(--accent-color); margin-right: 20px; width: 30px; text-align: center; }
+.contactText { font: 300 18px 'Lato', sans-serif; color: var(--text-secondary); }
+.contactText a { color: inherit; text-decoration: none; transition: color 0.2s ease; }
+.contactText a:hover { color: var(--text-primary); }
+.copyright { font: 300 14px 'Oswald', sans-serif; color: var(--text-muted); letter-spacing: 1px; }
+
+.socialMediaList { display: flex; list-style-type: none; padding: 0; gap: 16px; }
+.socialMediaList a {
+  position: relative; display: flex;
+  justify-content: center; align-items: center;
+  width: 48px; height: 48px; border-radius: 50%;
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+.socialMediaList a:hover {
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  transform: translateY(-2px);
+}
+
+/* ======================================================= */
+/* 5. Responsive Design                                    */
+/* ======================================================= */
+@media screen and (max-width: 850px) {
+  .contactWrapper { flex-direction: column; }
+  .formHorizontal, .directContactContainer { max-width: 500px; margin: 0 auto; }
+}
+
+@media screen and (max-width: 500px) {
+  .lineTitle { font-size: 28px; margin-bottom: 40px; }
+  .sendButton { font-size: 16px; }
+}
+@media screen and (max-width: 400px) {
+  .lineTitle::after { width: 50px; }
+  .sendButton { padding: 10px 24px; }
+}
+@media screen and (max-width: 320px) {
+  .lineTitle { font-size: 24px; }
+  .sendButton { font-size: 14px; padding: 8px 20px; }
+  .sendButton::before { content: 'Send'; }
+  .sendButton::after { content: ''; }
+  .sendButton:hover { transform: none; box-shadow: none; }
+}

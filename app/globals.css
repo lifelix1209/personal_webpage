@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* ────────── 1. 最初的浅 / 深色变量 ────────── */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ────────── 2. 全局色板 (已有) ────────── */
+:root {
+  --bg: #ffffff;
+  --fg: #1f2937;          /* slate‑800 */
+
+  /* ⚠️ 新增：Navbar 背景（浅色） */
+  --nav-bg: rgba(255,255,255,0.8);
+}
+
+[data-theme='dark'] {
+  --bg: #0f172a;          /* slate‑950 */
+  --fg: #f4f4f5;          /* zinc‑100 */
+
+  /* ⚠️ 新增：Navbar 背景（深色）#808080 50% 透明 */
+  --nav-bg: rgba(128,128,128,0.5);
+}
+
+/* ────────── 3. 基础应用到页面 ────────── */
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  transition: background-color .25s ease, color .25s ease;
+}
+
+/* ────────── 4. Navbar 背景覆盖 ────────── */
+/* ⚠️ 这一段确保无论组件里写什么类，都以 --nav-bg 为准 */
+nav {
+  background-color: var(--nav-bg) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background-color .25s ease;
+}
+
+/* ────────── 5. Badge 文字 / 边框同步主题 ────────── */
+/* ⚠️ 直接覆盖 DaisyUI 的 .badge-outline 默认色 */
+.badge-outline {
+  color: var(--fg) !important;
+  border-color: var(--fg) !important;
+  transition: color .25s ease, border-color .25s ease;
+}
+
+
+/* 取消默认淡入淡出动画，以便自定义 */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+/* 进入动画 —— 从右侧滑入并渐显 */
+@keyframes slide-in {
+  from { opacity: 0; transform: translateX(100px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+::view-transition-new(root) {
+  animation: slide-in 0.4s ease-in-out both;
+}
+
+/* 离开动画 —— 向左侧滑出并渐隐 */
+@keyframes slide-out {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(-100px); }
+}
+::view-transition-old(root) {
+  animation: slide-out 0.4s ease-in-out both;
+}

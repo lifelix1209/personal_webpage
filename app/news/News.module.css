@@ -1,0 +1,165 @@
+/* src/app/news/News.module.css */
+
+/* ======================================================= */
+/* 1. Page Layout & Themed Variables                       */
+/* ======================================================= */
+.newsSection {
+  /* --- Light Theme Variables --- */
+  --bg-main: #ffffff;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --card-bg: rgba(249, 250, 251, 0.7);
+  --card-border: #e5e7eb;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.07);
+  --hr-color: #e5e7eb;
+  --tag-bg: #ffedd5; /* orange-100 */
+  --tag-text: #c2410c; /* orange-700 */
+  --icon-color: #e73700; /* 橙色图标 */
+
+  /* --- Layout & Positioning --- */
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  padding: 10rem 1rem 5rem 1rem;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* --- Dark Theme Overrides --- */
+[data-theme='dark'] .newsSection {
+  --bg-main: #030712;
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --card-bg: rgba(30, 41, 59, 0.5);
+  --card-border: #374151;
+  --card-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2);
+  --hr-color: #374151;
+  --tag-bg: #3730a3; /* indigo-800 */
+  --tag-text: #e0e7ff; /* indigo-100 */
+  /* --- 修改点：将图标颜色改为指定的蓝色 --- */
+  --icon-color: #38bdf8;
+}
+
+/* ======================================================= */
+/* 2. Content & Typography                                 */
+/* ======================================================= */
+.container {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.mainTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subTitle {
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+  color: var(--text-secondary);
+}
+
+/* ======================================================= */
+/* 3. Timeline Styling                                     */
+/* ======================================================= */
+:global(.timeline li hr) {
+  background-color: var(--hr-color) !important;
+  transition: background-color 0.3s;
+}
+
+.year {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding-right: 1.5rem;
+}
+
+.timelineIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--icon-color);
+  transition: color 0.3s;
+}
+
+/* ======================================================= */
+/* 4. Paper Card Styling                                   */
+/* ======================================================= */
+.paperCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  min-width: 0;
+  max-width: 36rem;
+  border: 1px solid var(--card-border);
+  background-color: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  /* Additions to support rendering as an 'a' tag */
+  color: inherit; /* Inherit text color from parent */
+  text-decoration: none; /* Remove underline from links */
+}
+.paperCard:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 25px -5px rgb(0 0 0 / 0.15);
+}
+
+.cardImageWrapper {
+  width: 4rem;
+  height: 4rem;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.cardImage {
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.cardContent {
+  min-width: 0;
+  flex-grow: 1;
+}
+
+.cardTag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+/* ======================================================= */
+/* 5. Responsive Design                                    */
+/* ======================================================= */
+@media (max-width: 768px) {
+  .newsSection {
+    padding-top: 8rem;
+  }
+  .mainTitle {
+    font-size: 1.875rem;
+  }
+  .subTitle {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  .year {
+    text-align: left !important;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+  }
+}
