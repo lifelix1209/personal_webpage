@@ -1,0 +1,157 @@
+/* PokeBallLoader.css - Pixel Art Style */
+
+/* Pixel font helper class */
+.pixel-font {
+  font-family: var(--font-pixel), "Courier New", monospace;
+  letter-spacing: 0.05em;
+}
+
+.poke-loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: var(--font-pixel), "Courier New", monospace;
+}
+
+.poke-ball-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transition: transform 0.2s ease-out;
+}
+
+.poke-ball-pixel {
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Shake animation - ball shaking like trying to catch Pokemon */
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-30deg); }
+  20% { transform: rotate(25deg); }
+  30% { transform: rotate(-20deg); }
+  40% { transform: rotate(15deg); }
+  50% { transform: rotate(-10deg); }
+  60% { transform: rotate(5deg); }
+  70% { transform: rotate(-3deg); }
+  80% { transform: rotate(2deg); }
+  90% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.shaking {
+  animation: shake 0.8s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+.neutral {
+  transform: rotate(0deg);
+}
+
+/* Loading text */
+.loading-text {
+  color: var(--retro-beige);
+  font-size: 12px;
+  text-align: center;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0.5; }
+}
+
+/* Success text */
+.success-text {
+  color: var(--retro-yellow);
+  font-size: 16px;
+  text-align: center;
+  animation: success-pop 0.3s ease-out;
+}
+
+@keyframes success-pop {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Health bar */
+.poke-loader-container .health-bar {
+  width: 160px;
+  margin-top: 8px;
+}
+
+.poke-loader-container .health-bar-fill {
+  background: linear-gradient(to bottom, #7fff7f, var(--retro-green));
+}
+
+/* Stars container */
+.stars-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  width: 120px;
+  height: 60px;
+  opacity: 0;
+}
+
+/* Pixel stars image */
+.pixel-stars-image {
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+  animation: stars-pop 1s ease-out forwards;
+}
+
+.stars-container.visible {
+  opacity: 1;
+}
+
+.stars-container.visible .pixel-stars-image {
+  animation: stars-pop 1s ease-out forwards;
+}
+
+@keyframes stars-pop {
+  0% {
+    transform: scale(0.2) translateY(30px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1) translateY(-5px);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(0.95) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .poke-ball-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .poke-loader-container .health-bar {
+    width: 120px;
+  }
+
+  .stars-container {
+    width: 90px;
+    height: 45px;
+  }
+}

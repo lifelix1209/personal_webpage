@@ -1,0 +1,388 @@
+@import "tailwindcss";
+
+/* Retro Pixel Style System - Game Boy / NES Inspired */
+:root {
+  /* Primary Retro Colors */
+  --retro-green-dark: #0f380f;
+  --retro-green: #306230;
+  --retro-green-light: #8bac0f;
+  --retro-cream: #9bbc0f;
+  --retro-yellow: #f8f800;
+  --retro-orange: #f87800;
+  --retro-red: #d80000;
+  --retro-brown: #5c4033;
+  --retro-beige: #c4b7a6;
+  --retro-dark: #1a1a1a;
+
+  /* GBA Resolution scale */
+  --gba-scale: 1;
+}
+
+@theme inline {
+  /* Retro color palette */
+  --color-retro-dark: var(--retro-dark);
+  --color-retro-green-dark: var(--retro-green-dark);
+  --color-retro-green: var(--retro-green);
+  --color-retro-green-light: var(--retro-green-light);
+  --color-retro-cream: var(--retro-cream);
+  --color-retro-yellow: var(--retro-yellow);
+  --color-retro-orange: var(--retro-orange);
+  --color-retro-red: var(--retro-red);
+  --color-retro-brown: var(--retro-brown);
+  --color-retro-beige: var(--retro-beige);
+
+  /* Legacy Pokemon colors for compatibility */
+  --color-pokemon-red: var(--retro-red);
+  --color-pokemon-red-dark: #a00000;
+  --color-pokemon-blue: #3b4cca;
+  --color-pokemon-blue-dark: #2a3599;
+  --color-pokemon-yellow: var(--retro-yellow);
+  --color-pokemon-yellow-dark: #c8c800;
+  --color-pokemon-green: var(--retro-green);
+  --color-pokemon-green-dark: var(--retro-green-dark);
+  --color-pokemon-brown: var(--retro-brown);
+  --color-pokemon-cream: var(--retro-beige);
+  --color-pokemon-dark: var(--retro-dark);
+
+  /* Pixel font */
+  --font-pixel: "Press Start 2P", "Courier New", monospace;
+}
+
+/* Pixel Art Font Simulation */
+@font-face {
+  font-family: 'Pixel';
+  src: local('Courier New');
+}
+
+/* Disable font smoothing for pixel look */
+* {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  image-rendering: pixelated;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-pixel), "Courier New", monospace;
+  background: var(--retro-dark);
+  color: var(--retro-beige);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--retro-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--retro-green);
+  border: 2px solid var(--retro-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--retro-green-light);
+}
+
+/* GBA Screen Effect */
+.gba-screen {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Pixel Border */
+.pixel-border {
+  box-shadow:
+    -4px 0 0 0 var(--pokemon-cream),
+    4px 0 0 0 var(--pokemon-cream),
+    0 -4px 0 0 var(--pokemon-cream),
+    0 4px 0 0 var(--pokemon-cream);
+  margin: 4px;
+}
+
+/* Pokemon Text Style */
+.pokemon-text {
+  text-shadow:
+    2px 2px 0 var(--retro-dark),
+    -1px -1px 0 var(--retro-dark),
+    1px -1px 0 var(--retro-dark),
+    -1px 1px 0 var(--retro-dark),
+    1px 1px 0 var(--retro-dark);
+  letter-spacing: 2px;
+}
+
+/* Loading Screen Overlay */
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--retro-dark);
+}
+
+/* GBA Button Style */
+.gba-button {
+  font-family: var(--font-pixel), monospace;
+  background: var(--retro-yellow);
+  border: 4px solid var(--retro-orange);
+  color: var(--retro-dark);
+  cursor: pointer;
+  image-rendering: pixelated;
+  transition: all 0.1s;
+}
+
+.gba-button:hover {
+  transform: scale(1.05);
+  background: var(--retro-orange);
+}
+
+.gba-button:active {
+  transform: scale(0.95);
+  border-color: var(--retro-brown);
+}
+
+/* Health Bar Style */
+.health-bar {
+  background: var(--retro-brown);
+  border: 3px solid var(--retro-beige);
+  height: 16px;
+  position: relative;
+}
+
+.health-bar-fill {
+  background: linear-gradient(to bottom, #7fff7f, var(--retro-green));
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+/* Experience Bar */
+.exp-bar {
+  background: var(--retro-yellow);
+  border: 2px solid var(--retro-orange);
+  height: 8px;
+}
+
+/* Poke Ball Animation */
+.pokeball {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(to bottom,
+    var(--retro-red) 0%, var(--retro-red) 45%,
+    var(--retro-beige) 45%, var(--retro-beige) 55%,
+    var(--retro-green) 55%, var(--retro-green) 100%
+  );
+  border-radius: 50%;
+  border: 4px solid var(--retro-dark);
+  position: relative;
+  animation: pokeball-bounce 1s ease-in-out infinite;
+}
+
+.pokeball::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: var(--retro-dark);
+  transform: translateY(-50%);
+}
+
+.pokeball::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: var(--retro-beige);
+  border: 4px solid var(--retro-dark);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes pokeball-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Pixel Character Walking Animation */
+.character-walk {
+  animation: walk 0.5s steps(4) infinite;
+}
+
+@keyframes walk {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+/* Glitch Effect */
+.glitch {
+  animation: glitch 0.3s ease-in-out;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
+
+/* Fade Transitions */
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Typewriter Effect */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(40);
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Stars Background */
+.stars {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--retro-cream);
+  animation: twinkle 1s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Menu Selection */
+.menu-item {
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.menu-item:hover,
+.menu-item.selected {
+  background: var(--retro-yellow);
+  color: var(--retro-dark);
+  transform: translateX(10px);
+}
+
+/* Dialog Box */
+.dialog-box {
+  background: var(--retro-beige);
+  border: 4px solid var(--retro-brown);
+  color: var(--retro-dark);
+  position: relative;
+}
+
+.dialog-box::before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  border: 10px solid transparent;
+  border-top-color: var(--retro-brown);
+}
+
+/* Card Hover Effect */
+.card-hover {
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 8px 8px 0 var(--retro-yellow);
+}
+
+/* Loading Progress Bar */
+.loading-progress {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--retro-red),
+    var(--retro-red) 10px,
+    var(--retro-yellow) 10px,
+    var(--retro-orange) 20px
+  );
+  animation: loading-stripes 1s linear infinite;
+}
+
+@keyframes loading-stripes {
+  0% { background-position: 0 0; }
+  100% { background-position: 40px 0; }
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 4s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-spin-slow {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.animate-twinkle {
+  animation: twinkle 1s ease-in-out infinite;
+}
