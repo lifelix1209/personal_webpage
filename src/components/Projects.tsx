@@ -137,7 +137,7 @@ export default function Projects() {
                 transition-all duration-300
                 ${
                   selectedProject === index
-                    ? "bg-pokemon-yellow border-pokemon-yellow-dark transform scale-105 z-10"
+                    ? "bg-pokemon-yellow border-pokemon-yellow-dark"
                     : "bg-pokemon-cream/10 border-pokemon-cream/30 hover:bg-pokemon-cream/20"
                 }
                 ${battleMode ? "battle-card" : ""}
@@ -190,7 +190,11 @@ export default function Projects() {
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-2 py-1 bg-pokemon-blue/30 text-pokemon-cream rounded"
+                    className={`text-xs px-2 py-1 rounded ${
+                      selectedProject === index
+                        ? "bg-pokemon-dark text-pokemon-yellow"
+                        : "bg-pokemon-blue/30 text-pokemon-cream"
+                    }`}
                   >
                     {tag}
                   </span>
@@ -199,7 +203,7 @@ export default function Projects() {
 
               {/* Selected Details */}
               {selectedProject === index && (
-                <div className="absolute -bottom-2 left-0 right-0 p-4 bg-pokemon-dark border-t-4 border-pokemon-yellow transform translate-full">
+                <div className="mt-4 p-4 bg-pokemon-dark border-t-4 border-pokemon-yellow rounded-lg">
                   <div className="text-center">
                     <p className="text-pokemon-yellow font-bold mb-2">
                       ★ {project.name} ★

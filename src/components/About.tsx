@@ -59,17 +59,17 @@ export default function About() {
           <div className="bg-pokemon-cream rounded-xl p-6 text-pokemon-dark border-4 border-pokemon-brown">
             {/* Trainer Sprite Area */}
             <div className="flex justify-center mb-6">
-              <div className="w-32 h-32 bg-pokemon-blue rounded-full border-4 border-pokemon-blue-dark flex items-center justify-center">
-                <span className="text-6xl">👨‍💻</span>
+              <div className="w-32 h-32 bg-pokemon-blue rounded-full border-4 border-pokemon-blue-dark flex items-center justify-center overflow-hidden">
+                <img src="/assets/icons/ava.png" alt="Avatar" className="w-full h-full object-cover" />
               </div>
             </div>
 
             {/* Trainer Name */}
             <div className="text-center mb-6">
               <div className="bg-pokemon-yellow inline-block px-6 py-2 rounded-lg font-bold text-xl border-2 border-pokemon-yellow-dark">
-                Felix Li 
+                HANZHANG "Felix" LI
               </div>
-              <p className="text-sm text-gray-600 mt-2">Full Stack Developer</p>
+              <p className="text-sm text-gray-600 mt-2">A Bioinformatic student</p>
             </div>
 
             {/* Player Stats */}
@@ -105,28 +105,40 @@ export default function About() {
               ))}
             </div>
 
-            {/* Badges */}
+            {/* Badges / Degrees */}
             <div className="mt-6 pt-4 border-t-2 border-gray-300">
-              <p className="text-sm font-bold mb-3">BADGES COLLECTED:</p>
-              <div className="flex gap-2 justify-center flex-wrap">
-                {[
-                  { name: "FIRE", color: "bg-red-500", letter: "F" },
-                  { name: "WATER", color: "bg-blue-500", letter: "W" },
-                  { name: "ELECTRIC", color: "bg-yellow-400", letter: "E" },
-                  { name: "GRASS", color: "bg-green-500", letter: "G" },
-                  { name: "ICE", color: "bg-cyan-400", letter: "I" },
-                  { name: "FAIRY", color: "bg-pink-400", letter: "Y" },
-                  { name: "PSYCHIC", color: "bg-purple-500", letter: "P" },
-                  { name: "GHOST", color: "bg-gray-600", letter: "H" }
-                ].map((badge, i) => (
-                  <div
-                    key={i}
-                    className={`w-10 h-10 rounded-full flex items-center justify-center border-2 border-gray-400 ${badge.color}`}
-                  >
-                    <span className="text-white font-bold text-sm">{badge.letter}</span>
-                  </div>
-                ))}
+              <p className="text-sm font-bold mb-3"> LEAGUE BADGE:</p>
+              <div className="flex justify-between px-4">
+                <div className="flex flex-col items-center">
+                  <img src="/assets/icons/b1.png" alt="PhD" className="w-12 h-12 rounded-lg object-cover" />
+                  <span className="text-xs text-gray-600 mt-1">PhD</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img src="/assets/icons/b2.png" alt="BSc" className="w-12 h-12 rounded-lg object-cover" />
+                  <span className="text-xs text-gray-600 mt-1">BSc</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <img src="/assets/icons/b3.png" alt="Honor BSc" className="w-12 h-12 rounded-lg object-cover" />
+                  <span className="text-xs text-gray-600 mt-1">Honor BSc</span>
+                </div>
               </div>
+            </div>
+
+            {/* Personal Info */}
+            <div className="mt-6 pt-4 border-t-2 border-gray-300">
+              <p className="text-sm font-bold mb-3">ABOUT ME:</p>
+              <p className="text-sm text-gray-700 leading-relaxed mb-3">
+                Hi, I'm Hanzhang Li! You can call me Felix. I'm a passionate in computational and developmental biology.
+              </p>
+              <p className="text-sm text-gray-700 leading-relaxed mb-2 font-bold">Research Interests:</p>
+              <ul className="text-sm text-gray-700 leading-relaxed list-disc list-inside space-y-1">
+                <li>Cell fate determination</li>
+                <li>Stem cell and regenerative bio</li>
+                <li>Evo Devo</li>
+              </ul>
+              <p className="text-sm text-gray-700 leading-relaxed mt-3">
+                For my publications please see <a href="#" className="text-pokemon-blue underline">link</a>
+              </p>
             </div>
           </div>
 
