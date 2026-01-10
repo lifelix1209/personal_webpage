@@ -9,8 +9,11 @@ const pressStart2P = Press_Start_2P({
 });
 
 export const metadata: Metadata = {
-  title: "TRAINER.IO - Personal Portfolio",
+  title: "Pokemon Master Journey of Felix",
   description: "A retro pixel-themed personal portfolio website",
+  icons: {
+    icon: "/assets/icons/logo.jpg",
+  },
 };
 
 export default function RootLayout({

@@ -40,7 +40,7 @@ export default function LoadingScreen({ onLoadingComplete }: LoadingScreenProps)
 
       {/* Footer */}
       <div className="absolute bottom-6 text-xs text-pokemon-cream/30 tracking-widest pixel-font">
-        &copy; 1996-2024 NINTENDO/CREATURES/GAME FREAK inc.
+        &copy; 2002-2026 Nintendium inc.
       </div>
     </div>
   );

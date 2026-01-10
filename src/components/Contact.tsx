@@ -13,10 +13,9 @@ export default function Contact() {
   const [selectedOption, setSelectedOption] = useState(0);
 
   const contactOptions = [
-    { icon: "📧", label: "EMAIL", value: "trainer@example.com" },
-    { icon: "📱", label: "PHONE", value: "+1 (555) POKEMON" },
-    { icon: "📍", label: "LOCATION", value: "PALLET TOWN" },
-    { icon: "🌐", label: "WEBSITE", value: "trainer.io" },
+    { icon: "email", label: "EMAIL", value: "lifelix1209@outlook.com" },
+    { icon: "location", label: "LOCATION", value: "CAMBRIDGE" },
+    { icon: "website", label: "WEBSITE", value: "Pokemon Master Journey of Felix" },
   ];
 
   const handleSubmit = async (e: FormEvent) => {

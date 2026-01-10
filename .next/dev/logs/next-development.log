@@ -12265,3 +12265,2369 @@ It can also happen if the client has a browser extension installed which messes 
 [07:24:04.915] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
 [07:24:05.915] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
 [07:24:05.915] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:36:34.089] Server  LOG     ✓ Compiled in 18ms
+[07:54:28.488] Server  LOG     ✓ Compiled in 41ms
+[07:54:31.017] Server  LOG     ✓ Compiled in 21ms
+[07:54:51.691] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:54:51.691] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:54:52.869] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:54:53.050] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:54:53.050] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:54:53.050] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                  <Home params={Promise} searchParams={Promise}>
+                    <div className="min-h-scre...">
+                      <LoadingScreen onLoadingComplete={function handleLoadingComplete}>
+                        <div className="fixed inse...">
+                          <BackgroundStars>
+                            <div className="absolute i...">
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "39.34939713399803%"
+-                                 left: "43.8772%"
++                                 top: "87.53695897222936%"
+-                                 top: "62.1747%"
++                                 width: 2.2116819763454934
+-                                 width: "1.01132px"
++                                 height: 2.2116819763454934
+-                                 height: "1.01132px"
++                                 opacity: 0.5473771154533679
+-                                 opacity: "0.440667"
++                                 animation: "twinkle 1.0755924490614277s ease-in-out infinite"
++                                 animationDelay: "2.54196215650057s"
+-                                 animation-duration: "2.22174s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.59433s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "50.419770919635745%"
+-                                 left: "15.7127%"
++                                 top: "6.14011916507291%"
+-                                 top: "71.0888%"
++                                 width: 2.678836567623185
+-                                 width: "2.90386px"
++                                 height: 2.678836567623185
+-                                 height: "2.90386px"
++                                 opacity: 0.4648975710486075
+-                                 opacity: "0.509573"
++                                 animation: "twinkle 2.4322104318366193s ease-in-out infinite"
++                                 animationDelay: "2.3612670710101265s"
+-                                 animation-duration: "2.12569s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.116669s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "5.9459582293532875%"
+-                                 left: "63.1834%"
++                                 top: "38.66400330875993%"
+-                                 top: "89.6702%"
++                                 width: 2.6499957551539763
+-                                 width: "3.00459px"
++                                 height: 2.6499957551539763
+-                                 height: "3.00459px"
++                                 opacity: 0.326483330559945
+-                                 opacity: "0.660405"
++                                 animation: "twinkle 1.8749238353521298s ease-in-out infinite"
++                                 animationDelay: "1.2409179268621793s"
+-                                 animation-duration: "1.28915s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.48392s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "64.05860487361046%"
+-                                 left: "90.1925%"
++                                 top: "45.450409890864876%"
+-                                 top: "73.9873%"
++                                 width: 3.164327753379715
+-                                 width: "1.63506px"
++                                 height: 3.164327753379715
+-                                 height: "1.63506px"
++                                 opacity: 0.31631609892433526
+-                                 opacity: "0.577704"
++                                 animation: "twinkle 2.448140088583716s ease-in-out infinite"
++                                 animationDelay: "2.3197388905027783s"
+-                                 animation-duration: "1.1951s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.96516s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "84.12812755903255%"
+-                                 left: "65.3076%"
++                                 top: "40.97340139104596%"
+-                                 top: "77.6464%"
++                                 width: 2.962176100357939
+-                                 width: "3.94485px"
++                                 height: 2.962176100357939
+-                                 height: "3.94485px"
++                                 opacity: 0.5818288278276049
+-                                 opacity: "0.56983"
++                                 animation: "twinkle 2.243377443942576s ease-in-out infinite"
++                                 animationDelay: "2.3058001335781717s"
+-                                 animation-duration: "1.3061s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.139693s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "39.27028611627274%"
+-                                 left: "22.5188%"
++                                 top: "44.856185162347806%"
+-                                 top: "46.3767%"
++                                 width: 2.501102132196336
+-                                 width: "1.1444px"
++                                 height: 2.501102132196336
+-                                 height: "1.1444px"
++                                 opacity: 0.6446635309944528
+-                                 opacity: "0.230075"
++                                 animation: "twinkle 2.867262919557736s ease-in-out infinite"
++                                 animationDelay: "0.6822556877421864s"
+-                                 animation-duration: "1.363s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.54471s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "45.022596248667455%"
+-                                 left: "4.20687%"
++                                 top: "36.05907857701792%"
+-                                 top: "38.4089%"
++                                 width: 2.7083725256277367
+-                                 width: "2.6844px"
++                                 height: 2.7083725256277367
+-                                 height: "2.6844px"
++                                 opacity: 0.6738309276981691
+-                                 opacity: "0.29042"
++                                 animation: "twinkle 2.0575339987479992s ease-in-out infinite"
++                                 animationDelay: "0.027603212751567074s"
+-                                 animation-duration: "1.15625s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.65961s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "90.62982791102964%"
+-                                 left: "82.1169%"
++                                 top: "45.05847823017921%"
+-                                 top: "74.6103%"
++                                 width: 1.9143932215610184
+-                                 width: "1.7663px"
++                                 height: 1.9143932215610184
+-                                 height: "1.7663px"
++                                 opacity: 0.5099779820826149
+-                                 opacity: "0.610704"
++                                 animation: "twinkle 1.3581949744483106s ease-in-out infinite"
++                                 animationDelay: "2.9871831168868694s"
+-                                 animation-duration: "1.30945s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.45884s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "46.67384720568282%"
+-                                 left: "85.3869%"
++                                 top: "54.904566247402855%"
+-                                 top: "3.8861%"
++                                 width: 1.7962325759395843
+-                                 width: "2.75524px"
++                                 height: 1.7962325759395843
+-                                 height: "2.75524px"
++                                 opacity: 0.6240591351871567
+-                                 opacity: "0.525357"
++                                 animation: "twinkle 1.3730223232450285s ease-in-out infinite"
++                                 animationDelay: "1.2369767089634423s"
+-                                 animation-duration: "1.23027s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.05813s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "68.10090253573614%"
+-                                 left: "84.4784%"
++                                 top: "35.310350151318126%"
+-                                 top: "43.8445%"
++                                 width: 2.266353695127795
+-                                 width: "2.67561px"
++                                 height: 2.266353695127795
+-                                 height: "2.67561px"
++                                 opacity: 0.5969015806484483
+-                                 opacity: "0.600029"
++                                 animation: "twinkle 1.8870798942131437s ease-in-out infinite"
++                                 animationDelay: "1.8999568234312796s"
+-                                 animation-duration: "2.89805s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.42937s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "86.36300268461457%"
+-                                 left: "78.161%"
++                                 top: "84.37519616517791%"
+-                                 top: "25.2629%"
++                                 width: 2.751684796752004
+-                                 width: "2.8064px"
++                                 height: 2.751684796752004
+-                                 height: "2.8064px"
++                                 opacity: 0.3307710597434875
+-                                 opacity: "0.423974"
++                                 animation: "twinkle 1.6557741694592396s ease-in-out infinite"
++                                 animationDelay: "2.980344050471376s"
+-                                 animation-duration: "1.4819s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.96535s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "73.48648880910295%"
+-                                 left: "70.1875%"
++                                 top: "42.58652342641957%"
+-                                 top: "45.7543%"
++                                 width: 1.2011933301568765
+-                                 width: "1.05322px"
++                                 height: 1.2011933301568765
+-                                 height: "1.05322px"
++                                 opacity: 0.4287574403137238
+-                                 opacity: "0.402416"
++                                 animation: "twinkle 2.6141211838342424s ease-in-out infinite"
++                                 animationDelay: "0.5584223249630437s"
+-                                 animation-duration: "2.22567s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.79929s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "21.338139896557696%"
+-                                 left: "78.6798%"
++                                 top: "49.491781300684444%"
+-                                 top: "13.8031%"
++                                 width: 1.1256342193080933
+-                                 width: "1.60436px"
++                                 height: 1.1256342193080933
+-                                 height: "1.60436px"
++                                 opacity: 0.5878624405462052
+-                                 opacity: "0.546103"
++                                 animation: "twinkle 2.4462007234012235s ease-in-out infinite"
++                                 animationDelay: "2.358058513839448s"
+-                                 animation-duration: "1.16585s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.159576s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "73.64496063131612%"
+-                                 left: "16.376%"
++                                 top: "83.18223736289501%"
+-                                 top: "71.447%"
++                                 width: 1.3843863696576388
+-                                 width: "1.31557px"
++                                 height: 1.3843863696576388
+-                                 height: "1.31557px"
++                                 opacity: 0.3084985444386493
+-                                 opacity: "0.662492"
++                                 animation: "twinkle 1.5122777563459315s ease-in-out infinite"
++                                 animationDelay: "2.310126069931121s"
+-                                 animation-duration: "2.89653s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.30801s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "48.21494939702377%"
+-                                 left: "24.8523%"
++                                 top: "30.470972740499004%"
+-                                 top: "4.36413%"
++                                 width: 3.7565335630659344
+-                                 width: "3.25241px"
++                                 height: 3.7565335630659344
+-                                 height: "3.25241px"
++                                 opacity: 0.45935581089541594
+-                                 opacity: "0.506208"
++                                 animation: "twinkle 1.4279637343581917s ease-in-out infinite"
++                                 animationDelay: "2.563965416953017s"
+-                                 animation-duration: "1.0137s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.27017s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "15.190930269633963%"
+-                                 left: "63.7568%"
++                                 top: "88.06970051106249%"
+-                                 top: "99.2679%"
++                                 width: 3.892824386553023
+-                                 width: "1.13964px"
++                                 height: 3.892824386553023
+-                                 height: "1.13964px"
++                                 opacity: 0.25712149629110725
+-                                 opacity: "0.374118"
++                                 animation: "twinkle 2.9767902791487355s ease-in-out infinite"
++                                 animationDelay: "0.9859412587786116s"
+-                                 animation-duration: "1.80278s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.98914s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "92.73295284814519%"
+-                                 left: "95.1647%"
++                                 top: "96.71505577664782%"
+-                                 top: "46.3871%"
++                                 width: 1.6659088711734404
+-                                 width: "2.74942px"
++                                 height: 1.6659088711734404
+-                                 height: "2.74942px"
++                                 opacity: 0.5838381984855485
+-                                 opacity: "0.393647"
++                                 animation: "twinkle 2.310271614626348s ease-in-out infinite"
++                                 animationDelay: "2.6957341390410092s"
+-                                 animation-duration: "2.50216s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.82453s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "59.04858151036561%"
+-                                 left: "1.51328%"
++                                 top: "51.252886078488245%"
+-                                 top: "48.6558%"
++                                 width: 2.9642301544652403
+-                                 width: "3.13824px"
++                                 height: 2.9642301544652403
+-                                 height: "3.13824px"
++                                 opacity: 0.33743726161848075
+-                                 opacity: "0.24028"
++                                 animation: "twinkle 1.6259151209471696s ease-in-out infinite"
++                                 animationDelay: "2.2046923603477078s"
+-                                 animation-duration: "2.53127s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.03118s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "56.28260856421628%"
+-                                 left: "59.3886%"
++                                 top: "80.8626301140751%"
+-                                 top: "31.7766%"
++                                 width: 2.1357024202255444
+-                                 width: "1.79738px"
++                                 height: 2.1357024202255444
+-                                 height: "1.79738px"
++                                 opacity: 0.6244929169210476
+-                                 opacity: "0.680191"
++                                 animation: "twinkle 1.5930613634559778s ease-in-out infinite"
++                                 animationDelay: "1.6540359810950234s"
+-                                 animation-duration: "2.48827s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.40302s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "69.87747670542721%"
+-                                 left: "48.4646%"
++                                 top: "77.08920521306104%"
+-                                 top: "10.8797%"
++                                 width: 1.8890286274214612
+-                                 width: "2.26476px"
++                                 height: 1.8890286274214612
+-                                 height: "2.26476px"
++                                 opacity: 0.606731683577514
+-                                 opacity: "0.540684"
++                                 animation: "twinkle 2.2009476228796867s ease-in-out infinite"
++                                 animationDelay: "2.17362027440974s"
+-                                 animation-duration: "1.57489s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.85428s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "16.769218097067807%"
+-                                 left: "83.8622%"
++                                 top: "95.30601802669027%"
+-                                 top: "33.0437%"
++                                 width: 3.5351541413197776
+-                                 width: "2.3057px"
++                                 height: 3.5351541413197776
+-                                 height: "2.3057px"
++                                 opacity: 0.2901400538412634
+-                                 opacity: "0.61711"
++                                 animation: "twinkle 1.8197260779631965s ease-in-out infinite"
++                                 animationDelay: "2.7960395396990876s"
+-                                 animation-duration: "1.34707s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.355758s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "43.662272370301594%"
+-                                 left: "59.0195%"
++                                 top: "70.35151362431115%"
+-                                 top: "23.1505%"
++                                 width: 1.8870917836676346
+-                                 width: "1.05945px"
++                                 height: 1.8870917836676346
+-                                 height: "1.05945px"
++                                 opacity: 0.5268801181742425
+-                                 opacity: "0.542553"
++                                 animation: "twinkle 1.3892576516992259s ease-in-out infinite"
++                                 animationDelay: "1.7644290812020706s"
+-                                 animation-duration: "2.57336s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.77593s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "20.014051039053015%"
+-                                 left: "27.59%"
++                                 top: "30.93514805058295%"
+-                                 top: "58.7768%"
++                                 width: 2.0307651946295127
+-                                 width: "3.18571px"
++                                 height: 2.0307651946295127
+-                                 height: "3.18571px"
++                                 opacity: 0.2843089600828548
+-                                 opacity: "0.520556"
++                                 animation: "twinkle 2.0188588347082472s ease-in-out infinite"
++                                 animationDelay: "1.430078038044273s"
+-                                 animation-duration: "2.6286s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.73611s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "27.557403737034967%"
+-                                 left: "93.0366%"
++                                 top: "25.021213521625228%"
+-                                 top: "92.4363%"
++                                 width: 2.2076530505146077
+-                                 width: "2.92647px"
++                                 height: 2.2076530505146077
+-                                 height: "2.92647px"
++                                 opacity: 0.2055898164088818
+-                                 opacity: "0.693302"
++                                 animation: "twinkle 1.0046827631952988s ease-in-out infinite"
++                                 animationDelay: "1.6071748356006106s"
+-                                 animation-duration: "2.97721s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.3951s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "1.9198344785717913%"
+-                                 left: "56.8434%"
++                                 top: "59.33532210012943%"
+-                                 top: "26.8219%"
++                                 width: 2.7231637183764765
+-                                 width: "1.52921px"
++                                 height: 2.7231637183764765
+-                                 height: "1.52921px"
++                                 opacity: 0.4368352005034993
+-                                 opacity: "0.360139"
++                                 animation: "twinkle 2.6552759930731544s ease-in-out infinite"
++                                 animationDelay: "2.9171299057318105s"
+-                                 animation-duration: "2.40648s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.73043s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "25.968885541414576%"
+-                                 left: "67.9947%"
++                                 top: "48.39068551008586%"
+-                                 top: "84.1642%"
++                                 width: 3.7260424571582207
+-                                 width: "3.02936px"
++                                 height: 3.7260424571582207
+-                                 height: "3.02936px"
++                                 opacity: 0.6539414988738788
+-                                 opacity: "0.572425"
++                                 animation: "twinkle 2.5854059468449226s ease-in-out infinite"
++                                 animationDelay: "1.9140335099892996s"
+-                                 animation-duration: "1.52503s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.38633s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "95.29809735382015%"
+-                                 left: "20.2882%"
++                                 top: "86.37711872436131%"
+-                                 top: "84.7065%"
++                                 width: 3.078637424000492
+-                                 width: "1.63355px"
++                                 height: 3.078637424000492
+-                                 height: "1.63355px"
++                                 opacity: 0.6750153650784836
+-                                 opacity: "0.245694"
++                                 animation: "twinkle 1.960369622104188s ease-in-out infinite"
++                                 animationDelay: "2.7926025697152292s"
+-                                 animation-duration: "1.60322s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.3092s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "88.53038741194777%"
+-                                 left: "73.5646%"
++                                 top: "93.35383729525184%"
+-                                 top: "58.932%"
++                                 width: 2.017849599942454
+-                                 width: "1.94679px"
++                                 height: 2.017849599942454
+-                                 height: "1.94679px"
++                                 opacity: 0.2552724616305315
+-                                 opacity: "0.33754"
++                                 animation: "twinkle 1.9926578895816225s ease-in-out infinite"
++                                 animationDelay: "2.267111707246752s"
+-                                 animation-duration: "1.07882s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.238026s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "37.85730941418992%"
+-                                 left: "74.5671%"
++                                 top: "37.307146209934714%"
+-                                 top: "49.421%"
++                                 width: 3.583718189165488
+-                                 width: "3.74027px"
++                                 height: 3.583718189165488
+-                                 height: "3.74027px"
++                                 opacity: 0.39041619031471564
+-                                 opacity: "0.248743"
++                                 animation: "twinkle 2.3383093514042113s ease-in-out infinite"
++                                 animationDelay: "0.6003316812958912s"
+-                                 animation-duration: "1.49055s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.48613s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "15.313962847634578%"
+-                                 left: "94.422%"
++                                 top: "87.87309436835696%"
+-                                 top: "33.9713%"
++                                 width: 3.0184024287239946
+-                                 width: "2.58507px"
++                                 height: 3.0184024287239946
+-                                 height: "2.58507px"
++                                 opacity: 0.4044872691623415
+-                                 opacity: "0.607373"
++                                 animation: "twinkle 1.1552073245594603s ease-in-out infinite"
++                                 animationDelay: "0.1422904001919435s"
+-                                 animation-duration: "2.02801s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.08114s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "37.14624498844601%"
+-                                 left: "44.4176%"
++                                 top: "6.838874391580707%"
+-                                 top: "21.6685%"
++                                 width: 1.186559129643964
+-                                 width: "2.20336px"
++                                 height: 1.186559129643964
+-                                 height: "2.20336px"
++                                 opacity: 0.472206396463001
+-                                 opacity: "0.454277"
++                                 animation: "twinkle 2.740425807905081s ease-in-out infinite"
++                                 animationDelay: "0.7108803198527375s"
+-                                 animation-duration: "1.14841s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.44098s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "80.25130165554019%"
+-                                 left: "76.6987%"
++                                 top: "45.57339433191087%"
+-                                 top: "38.3941%"
++                                 width: 1.686933914695531
+-                                 width: "1.99226px"
++                                 height: 1.686933914695531
+-                                 height: "1.99226px"
++                                 opacity: 0.3530152367671449
+-                                 opacity: "0.631266"
++                                 animation: "twinkle 1.296805412418865s ease-in-out infinite"
++                                 animationDelay: "0.7443550318101095s"
+-                                 animation-duration: "1.75518s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.57261s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "59.98792084616588%"
+-                                 left: "6.18654%"
++                                 top: "94.86602911332494%"
+-                                 top: "99.754%"
++                                 width: 2.876551959516019
+-                                 width: "2.42392px"
++                                 height: 2.876551959516019
+-                                 height: "2.42392px"
++                                 opacity: 0.6832114098551254
+-                                 opacity: "0.699297"
++                                 animation: "twinkle 2.6823300592702086s ease-in-out infinite"
++                                 animationDelay: "2.3099858812015555s"
+-                                 animation-duration: "2.2912s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.39896s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "0.052934481569733016%"
+-                                 left: "66.882%"
++                                 top: "55.67249478513823%"
+-                                 top: "97.1142%"
++                                 width: 2.244809953761213
+-                                 width: "2.80788px"
++                                 height: 2.244809953761213
+-                                 height: "2.80788px"
++                                 opacity: 0.4658560986468856
+-                                 opacity: "0.412492"
++                                 animation: "twinkle 1.5164037096311207s ease-in-out infinite"
++                                 animationDelay: "0.15497500209697868s"
+-                                 animation-duration: "1.00021s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.78651s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "76.95999057698816%"
+-                                 left: "25.4122%"
++                                 top: "19.59819445444798%"
+-                                 top: "92.3986%"
++                                 width: 3.950021403266226
+-                                 width: "2.00962px"
++                                 height: 3.950021403266226
+-                                 height: "2.00962px"
++                                 opacity: 0.5748679609486491
+-                                 opacity: "0.568973"
++                                 animation: "twinkle 1.202271130999621s ease-in-out infinite"
++                                 animationDelay: "1.4939652201643459s"
+-                                 animation-duration: "1.39077s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.105717s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "91.72118942190183%"
+-                                 left: "45.7919%"
++                                 top: "44.3733753029985%"
+-                                 top: "92.9561%"
++                                 width: 2.0893425104220573
+-                                 width: "1.94503px"
++                                 height: 2.0893425104220573
+-                                 height: "1.94503px"
++                                 opacity: 0.37594846661544823
+-                                 opacity: "0.472336"
++                                 animation: "twinkle 2.7358569512867548s ease-in-out infinite"
++                                 animationDelay: "0.7949712916786296s"
+-                                 animation-duration: "1.1419s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.73341s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "13.85498800041438%"
+-                                 left: "86.4151%"
++                                 top: "43.753892802213166%"
+-                                 top: "94.4776%"
++                                 width: 1.7519405867235247
+-                                 width: "3.31126px"
++                                 height: 1.7519405867235247
+-                                 height: "3.31126px"
++                                 opacity: 0.6163039440453666
+-                                 opacity: "0.626886"
++                                 animation: "twinkle 2.0548476437778156s ease-in-out infinite"
++                                 animationDelay: "1.3856142088019756s"
+-                                 animation-duration: "1.11181s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.0042s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "15.53366039499593%"
+-                                 left: "47.2371%"
++                                 top: "24.385197398869675%"
+-                                 top: "61.6324%"
++                                 width: 2.2161463883764734
+-                                 width: "1.4335px"
++                                 height: 2.2161463883764734
+-                                 height: "1.4335px"
++                                 opacity: 0.6311137989958158
+-                                 opacity: "0.590145"
++                                 animation: "twinkle 2.6848714798131668s ease-in-out infinite"
++                                 animationDelay: "1.870517322163291s"
+-                                 animation-duration: "2.67839s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.59751s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "36.01599840292808%"
+-                                 left: "39.3969%"
++                                 top: "42.75258662687489%"
+-                                 top: "69.1221%"
++                                 width: 2.3965941274017957
+-                                 width: "1.77465px"
++                                 height: 2.3965941274017957
+-                                 height: "1.77465px"
++                                 opacity: 0.6057854279782577
+-                                 opacity: "0.317764"
++                                 animation: "twinkle 2.346361868135852s ease-in-out infinite"
++                                 animationDelay: "0.4155940071939568s"
+-                                 animation-duration: "2.47528s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.60391s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "65.84369484184758%"
+-                                 left: "64.4876%"
++                                 top: "15.15562693068736%"
+-                                 top: "92.5991%"
++                                 width: 2.940253863109203
+-                                 width: "1.05031px"
++                                 height: 2.940253863109203
+-                                 height: "1.05031px"
++                                 opacity: 0.4129409607727849
+-                                 opacity: "0.625927"
++                                 animation: "twinkle 2.890945392122683s ease-in-out infinite"
++                                 animationDelay: "1.5699012443026334s"
+-                                 animation-duration: "2.07543s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.903202s"
+                                }}
+                              >
+                          ...
+                      ...
+              ...
+            ...
+
+[07:54:56.061] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render LoadingScreen PokeBallLoader PokeBallLoader
+[07:54:57.880] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:54:57.880] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:54:58.178] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:54:58.178] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:55:36.551] Server  LOG     ✓ Compiled in 15ms
+[07:55:37.607] Server  LOG     ✓ Compiled in 17ms
+[07:55:45.768] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:55:45.897] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:55:45.897] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:55:45.897] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                  <Home params={Promise} searchParams={Promise}>
+                    <div className="min-h-scre...">
+                      <LoadingScreen onLoadingComplete={function handleLoadingComplete}>
+                        <div className="fixed inse...">
+                          <BackgroundStars>
+                            <div className="absolute i...">
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "28.13067352984744%"
+-                                 left: "83.5486%"
++                                 top: "46.58980556265552%"
+-                                 top: "25.3336%"
++                                 width: 2.8825592626764784
+-                                 width: "1.92322px"
++                                 height: 2.8825592626764784
+-                                 height: "1.92322px"
++                                 opacity: 0.3812082697645973
+-                                 opacity: "0.356473"
++                                 animation: "twinkle 2.900919138378105s ease-in-out infinite"
++                                 animationDelay: "2.7787856417952437s"
+-                                 animation-duration: "1.91698s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.60807s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "61.79295544370357%"
+-                                 left: "37.5342%"
++                                 top: "92.28000051177321%"
+-                                 top: "14.6995%"
++                                 width: 2.257623171142681
+-                                 width: "1.74371px"
++                                 height: 2.257623171142681
+-                                 height: "1.74371px"
++                                 opacity: 0.5861441256302226
+-                                 opacity: "0.559014"
++                                 animation: "twinkle 2.575359439779657s ease-in-out infinite"
++                                 animationDelay: "2.304525272923075s"
+-                                 animation-duration: "2.02891s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.0820292s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "13.52927665011947%"
+-                                 left: "36.029%"
++                                 top: "65.79386621266545%"
+-                                 top: "26.0595%"
++                                 width: 1.6770101286105896
+-                                 width: "2.42538px"
++                                 height: 1.6770101286105896
+-                                 height: "2.42538px"
++                                 opacity: 0.49034452465676076
+-                                 opacity: "0.394616"
++                                 animation: "twinkle 2.587604736620004s ease-in-out infinite"
++                                 animationDelay: "0.27261136131259633s"
+-                                 animation-duration: "1.32692s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.34066s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "61.824314888228095%"
+-                                 left: "92.1615%"
++                                 top: "2.0384468262471755%"
+-                                 top: "40.2245%"
++                                 width: 3.1538461635937476
+-                                 width: "3.09046px"
++                                 height: 3.1538461635937476
+-                                 height: "3.09046px"
++                                 opacity: 0.4084262854391489
+-                                 opacity: "0.582742"
++                                 animation: "twinkle 1.5410707319042531s ease-in-out infinite"
++                                 animationDelay: "2.4388272623971687s"
+-                                 animation-duration: "1.49861s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.41976s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "65.0451341660652%"
+-                                 left: "37.5457%"
++                                 top: "22.82064974605801%"
+-                                 top: "77.9883%"
++                                 width: 3.946747054497639
+-                                 width: "1.42032px"
++                                 height: 3.946747054497639
+-                                 height: "1.42032px"
++                                 opacity: 0.5347436388695959
+-                                 opacity: "0.332304"
++                                 animation: "twinkle 2.1442216195591675s ease-in-out infinite"
++                                 animationDelay: "0.6779221219843696s"
+-                                 animation-duration: "1.37162s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.32597s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "43.58255893803429%"
+-                                 left: "7.34584%"
++                                 top: "29.112287954358717%"
+-                                 top: "19.6659%"
++                                 width: 1.0144395630880876
+-                                 width: "1.72902px"
++                                 height: 1.0144395630880876
+-                                 height: "1.72902px"
++                                 opacity: 0.39153676269720666
+-                                 opacity: "0.430853"
++                                 animation: "twinkle 1.5841803416785831s ease-in-out infinite"
++                                 animationDelay: "2.1842267356758662s"
+-                                 animation-duration: "1.80888s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.55225s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "16.171448054091652%"
+-                                 left: "69.6177%"
++                                 top: "63.37160773608977%"
+-                                 top: "63.5353%"
++                                 width: 3.5924425424798336
+-                                 width: "2.93416px"
++                                 height: 3.5924425424798336
+-                                 height: "2.93416px"
++                                 opacity: 0.6039594548823872
+-                                 opacity: "0.47142"
++                                 animation: "twinkle 2.571051757075048s ease-in-out infinite"
++                                 animationDelay: "2.239641381781553s"
+-                                 animation-duration: "2.99509s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.55024s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "82.04649417476408%"
+-                                 left: "86.7575%"
++                                 top: "78.40366157021688%"
+-                                 top: "23.9959%"
++                                 width: 1.9771630151046586
+-                                 width: "3.47156px"
++                                 height: 1.9771630151046586
+-                                 height: "3.47156px"
++                                 opacity: 0.6973921371644314
+-                                 opacity: "0.377247"
++                                 animation: "twinkle 2.345217153988843s ease-in-out infinite"
++                                 animationDelay: "0.9351168872633463s"
+-                                 animation-duration: "2.84714s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.336249s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "59.57307106942943%"
+-                                 left: "24.48%"
++                                 top: "91.07822019591538%"
+-                                 top: "74.1843%"
++                                 width: 3.011815557189891
+-                                 width: "2.8763px"
++                                 height: 3.011815557189891
+-                                 height: "2.8763px"
++                                 opacity: 0.6550173190673061
+-                                 opacity: "0.553321"
++                                 animation: "twinkle 1.1656892248505013s ease-in-out infinite"
++                                 animationDelay: "0.7981521641363671s"
+-                                 animation-duration: "2.81569s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.733361s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "56.851138875968076%"
+-                                 left: "3.31807%"
++                                 top: "40.746759481261584%"
+-                                 top: "55.1986%"
++                                 width: 1.17765135506698
+-                                 width: "1.02538px"
++                                 height: 1.17765135506698
+-                                 height: "1.02538px"
++                                 opacity: 0.641621360440038
+-                                 opacity: "0.37309"
++                                 animation: "twinkle 1.7834537600810136s ease-in-out infinite"
++                                 animationDelay: "1.010683782360334s"
+-                                 animation-duration: "2.46926s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.81188s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "97.31100287706666%"
+-                                 left: "71.9535%"
++                                 top: "35.67141024474855%"
+-                                 top: "88.6648%"
++                                 width: 2.8731636150313165
+-                                 width: "2.26249px"
++                                 height: 2.8731636150313165
+-                                 height: "2.26249px"
++                                 opacity: 0.46187959614721746
+-                                 opacity: "0.451073"
++                                 animation: "twinkle 2.1632985694765927s ease-in-out infinite"
++                                 animationDelay: "2.5888182501980466s"
+-                                 animation-duration: "2.54932s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.514873s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "1.3398055160210642%"
+-                                 left: "41.2126%"
++                                 top: "30.738638025728292%"
+-                                 top: "37.8785%"
++                                 width: 2.8495611982965343
+-                                 width: "1.26852px"
++                                 height: 2.8495611982965343
+-                                 height: "1.26852px"
++                                 opacity: 0.2701214242579992
+-                                 opacity: "0.676383"
++                                 animation: "twinkle 1.71701428390153s ease-in-out infinite"
++                                 animationDelay: "0.4579826893145664s"
+-                                 animation-duration: "2.96587s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.301323s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "90.14966640884798%"
+-                                 left: "20.6774%"
++                                 top: "20.02787060524307%"
+-                                 top: "1.61179%"
++                                 width: 3.3968576753002906
+-                                 width: "3.58237px"
++                                 height: 3.3968576753002906
+-                                 height: "3.58237px"
++                                 opacity: 0.49216147595935744
+-                                 opacity: "0.220002"
++                                 animation: "twinkle 1.707310135532052s ease-in-out infinite"
++                                 animationDelay: "0.5279917612384905s"
+-                                 animation-duration: "1.11142s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.69844s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "16.479405583003437%"
+-                                 left: "48.5109%"
++                                 top: "5.075341292972746%"
+-                                 top: "0.492674%"
++                                 width: 3.1094369755737734
+-                                 width: "3.024px"
++                                 height: 3.1094369755737734
+-                                 height: "3.024px"
++                                 opacity: 0.5135453516093629
+-                                 opacity: "0.479061"
++                                 animation: "twinkle 1.5777659554234533s ease-in-out infinite"
++                                 animationDelay: "2.849443257736011s"
+-                                 animation-duration: "1.8371s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.21952s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "7.930826103361488%"
+-                                 left: "16.6188%"
++                                 top: "11.492458024107732%"
+-                                 top: "47.5633%"
++                                 width: 3.0786281895871483
+-                                 width: "3.62215px"
++                                 height: 3.0786281895871483
+-                                 height: "3.62215px"
++                                 opacity: 0.32338006734035996
+-                                 opacity: "0.530428"
++                                 animation: "twinkle 1.3988911309185639s ease-in-out infinite"
++                                 animationDelay: "0.04423178761771451s"
+-                                 animation-duration: "1.04189s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.20494s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "14.246521273629343%"
+-                                 left: "60.1436%"
++                                 top: "19.675387682259093%"
+-                                 top: "17.7385%"
++                                 width: 1.3812807242942444
+-                                 width: "1.67261px"
++                                 height: 1.3812807242942444
+-                                 height: "1.67261px"
++                                 opacity: 0.6248386188761139
+-                                 opacity: "0.319385"
++                                 animation: "twinkle 1.8474572782497347s ease-in-out infinite"
++                                 animationDelay: "0.7414852958924021s"
+-                                 animation-duration: "1.2472s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.05474s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "50.39895539905307%"
+-                                 left: "63.8988%"
++                                 top: "21.8792776341987%"
+-                                 top: "11.7669%"
++                                 width: 2.9119671826176963
+-                                 width: "2.8738px"
++                                 height: 2.9119671826176963
+-                                 height: "2.8738px"
++                                 opacity: 0.5947623476141459
+-                                 opacity: "0.601984"
++                                 animation: "twinkle 2.9814287364215857s ease-in-out infinite"
++                                 animationDelay: "0.45899878187514176s"
+-                                 animation-duration: "2.71448s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.0633433s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "8.775642924570427%"
+-                                 left: "38.2144%"
++                                 top: "48.69778860641015%"
+-                                 top: "92.0727%"
++                                 width: 1.0331373016040235
+-                                 width: "1.61174px"
++                                 height: 1.0331373016040235
+-                                 height: "1.61174px"
++                                 opacity: 0.23252792433858493
+-                                 opacity: "0.460717"
++                                 animation: "twinkle 2.5021560495871142s ease-in-out infinite"
++                                 animationDelay: "2.648847532691701s"
+-                                 animation-duration: "2.94233s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.58187s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "97.52689875860516%"
+-                                 left: "25.293%"
++                                 top: "14.434851570972828%"
+-                                 top: "34.699%"
++                                 width: 3.737979658649168
+-                                 width: "2.7127px"
++                                 height: 3.737979658649168
+-                                 height: "2.7127px"
++                                 opacity: 0.6441814557234503
+-                                 opacity: "0.231874"
++                                 animation: "twinkle 1.2014585071332102s ease-in-out infinite"
++                                 animationDelay: "2.349870831503141s"
+-                                 animation-duration: "1.14755s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.73451s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "71.26609413498582%"
+-                                 left: "3.74654%"
++                                 top: "55.09252709756629%"
+-                                 top: "83.7713%"
++                                 width: 2.91935038164329
+-                                 width: "2.75148px"
++                                 height: 2.91935038164329
+-                                 height: "2.75148px"
++                                 opacity: 0.4149504790447898
+-                                 opacity: "0.347199"
++                                 animation: "twinkle 1.6159997918656424s ease-in-out infinite"
++                                 animationDelay: "1.6058434356619995s"
+-                                 animation-duration: "1.35364s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.908827s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "26.972087105575536%"
+-                                 left: "17.4649%"
++                                 top: "38.319449583005884%"
+-                                 top: "49.5338%"
++                                 width: 2.923725066751563
+-                                 width: "2.4708px"
++                                 height: 2.923725066751563
+-                                 height: "2.4708px"
++                                 opacity: 0.35580461980779743
+-                                 opacity: "0.213896"
++                                 animation: "twinkle 2.793409748739763s ease-in-out infinite"
++                                 animationDelay: "2.8057568489700095s"
+-                                 animation-duration: "1.75883s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.33959s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "43.28931791027324%"
+-                                 left: "34.8082%"
++                                 top: "22.42115373843334%"
+-                                 top: "58.0708%"
++                                 width: 2.3465406022267152
+-                                 width: "1.32371px"
++                                 height: 2.3465406022267152
+-                                 height: "1.32371px"
++                                 opacity: 0.5246494252089223
+-                                 opacity: "0.613725"
++                                 animation: "twinkle 2.429542038275106s ease-in-out infinite"
++                                 animationDelay: "0.46532622726349004s"
+-                                 animation-duration: "2.11572s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.405834s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "75.88025361112271%"
+-                                 left: "37.9684%"
++                                 top: "41.850711386481684%"
+-                                 top: "28.2285%"
++                                 width: 1.9303302788374228
+-                                 width: "1.22691px"
++                                 height: 1.9303302788374228
+-                                 height: "1.22691px"
++                                 opacity: 0.6274245619699153
+-                                 opacity: "0.581802"
++                                 animation: "twinkle 1.5785553758143755s ease-in-out infinite"
++                                 animationDelay: "0.44450016583367713s"
+-                                 animation-duration: "2.04506s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.5161s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "23.690047570740504%"
+-                                 left: "66.7876%"
++                                 top: "64.72395449434231%"
+-                                 top: "36.6222%"
++                                 width: 3.7139374995295316
+-                                 width: "1.32677px"
++                                 height: 3.7139374995295316
+-                                 height: "1.32677px"
++                                 opacity: 0.2058055813641283
+-                                 opacity: "0.667302"
++                                 animation: "twinkle 1.3387064440819392s ease-in-out infinite"
++                                 animationDelay: "0.09217737445444274s"
+-                                 animation-duration: "1.55255s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.6532s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "37.82949056984262%"
+-                                 left: "83.3591%"
++                                 top: "18.729905993613617%"
+-                                 top: "8.50834%"
++                                 width: 1.9655794050298103
+-                                 width: "2.92683px"
++                                 height: 1.9655794050298103
+-                                 height: "2.92683px"
++                                 opacity: 0.6410600797249166
+-                                 opacity: "0.463357"
++                                 animation: "twinkle 2.281839906169629s ease-in-out infinite"
++                                 animationDelay: "2.3508591164044437s"
+-                                 animation-duration: "1.25261s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.97886s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "13.673959181884976%"
+-                                 left: "15.8353%"
++                                 top: "76.16931525628335%"
+-                                 top: "76.5416%"
++                                 width: 2.4747886639580563
+-                                 width: "1.16021px"
++                                 height: 2.4747886639580563
+-                                 height: "1.16021px"
++                                 opacity: 0.5563747008707791
+-                                 opacity: "0.555115"
++                                 animation: "twinkle 2.2321614343485088s ease-in-out infinite"
++                                 animationDelay: "0.7685171222619119s"
+-                                 animation-duration: "2.91454s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.745996s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "20.74703972084465%"
+-                                 left: "4.72659%"
++                                 top: "87.30923492278063%"
+-                                 top: "18.0492%"
++                                 width: 2.3498448731577213
+-                                 width: "3.32911px"
++                                 height: 2.3498448731577213
+-                                 height: "3.32911px"
++                                 opacity: 0.3516031087911396
+-                                 opacity: "0.610186"
++                                 animation: "twinkle 2.363361273409007s ease-in-out infinite"
++                                 animationDelay: "1.42778655600082s"
+-                                 animation-duration: "1.439s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.68898s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "21.901856629966566%"
+-                                 left: "21.7534%"
++                                 top: "83.54800061520766%"
+-                                 top: "73.3278%"
++                                 width: 1.9898548487297192
+-                                 width: "1.43913px"
++                                 height: 1.9898548487297192
+-                                 height: "1.43913px"
++                                 opacity: 0.6975349915519282
+-                                 opacity: "0.482628"
++                                 animation: "twinkle 2.4568575195331004s ease-in-out infinite"
++                                 animationDelay: "0.14657123588798093s"
+-                                 animation-duration: "1.67804s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.995556s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "52.00586818084276%"
+-                                 left: "72.2744%"
++                                 top: "17.427552667063996%"
+-                                 top: "71.3553%"
++                                 width: 2.791283987157308
+-                                 width: "3.30057px"
++                                 height: 2.791283987157308
+-                                 height: "3.30057px"
++                                 opacity: 0.5765715034529914
+-                                 opacity: "0.627038"
++                                 animation: "twinkle 2.8519649043163064s ease-in-out infinite"
++                                 animationDelay: "2.1979168907655833s"
+-                                 animation-duration: "1.30961s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.0219012s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "51.479255693145895%"
+-                                 left: "93.0318%"
++                                 top: "91.59037492877518%"
+-                                 top: "31.773%"
++                                 width: 3.102025082909199
+-                                 width: "2.83598px"
++                                 height: 3.102025082909199
+-                                 height: "2.83598px"
++                                 opacity: 0.6234555900894967
+-                                 opacity: "0.544505"
++                                 animation: "twinkle 2.3557044003028054s ease-in-out infinite"
++                                 animationDelay: "1.4684454495977697s"
+-                                 animation-duration: "2.7582s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.89504s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "86.84042396916587%"
+-                                 left: "75.1448%"
++                                 top: "70.74521513780574%"
+-                                 top: "50.9139%"
++                                 width: 2.3108513304790366
+-                                 width: "2.25147px"
++                                 height: 2.3108513304790366
+-                                 height: "2.25147px"
++                                 opacity: 0.31422915069750895
+-                                 opacity: "0.296343"
++                                 animation: "twinkle 2.1782900985961713s ease-in-out infinite"
++                                 animationDelay: "0.4527795211852861s"
+-                                 animation-duration: "1.22166s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.12152s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "68.00804543608072%"
+-                                 left: "93.9273%"
++                                 top: "39.371876232537694%"
+-                                 top: "67.5301%"
++                                 width: 3.3000785650841378
+-                                 width: "3.50153px"
++                                 height: 3.3000785650841378
+-                                 height: "3.50153px"
++                                 opacity: 0.20959640144238373
+-                                 opacity: "0.487041"
++                                 animation: "twinkle 1.143507398326354s ease-in-out infinite"
++                                 animationDelay: "1.3326987262099563s"
+-                                 animation-duration: "2.47739s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.61064s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "34.36884292752104%"
+-                                 left: "8.73106%"
++                                 top: "86.25871657698505%"
+-                                 top: "84.3883%"
++                                 width: 1.7801094280445904
+-                                 width: "1.73488px"
++                                 height: 1.7801094280445904
+-                                 height: "1.73488px"
++                                 opacity: 0.2454248287315855
+-                                 opacity: "0.63256"
++                                 animation: "twinkle 1.889988121671013s ease-in-out infinite"
++                                 animationDelay: "1.6686151101581628s"
+-                                 animation-duration: "2.48326s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.59545s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "60.54238870419202%"
+-                                 left: "79.7089%"
++                                 top: "0.4037846867080308%"
+-                                 top: "65.3423%"
++                                 width: 3.861761231346028
+-                                 width: "3.42698px"
++                                 height: 3.861761231346028
+-                                 height: "3.42698px"
++                                 opacity: 0.6570728525698362
+-                                 opacity: "0.62483"
++                                 animation: "twinkle 1.0066636532871176s ease-in-out infinite"
++                                 animationDelay: "1.779161827855647s"
+-                                 animation-duration: "1.76442s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.15619s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "22.98189169876672%"
+-                                 left: "56.6827%"
++                                 top: "94.28343527592472%"
+-                                 top: "78.7378%"
++                                 width: 2.816982184924124
+-                                 width: "3.48569px"
++                                 height: 2.816982184924124
+-                                 height: "3.48569px"
++                                 opacity: 0.5921631103271299
+-                                 opacity: "0.634459"
++                                 animation: "twinkle 2.3996224815402156s ease-in-out infinite"
++                                 animationDelay: "0.0479517499286094s"
+-                                 animation-duration: "2.91581s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.66926s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "94.24795924787975%"
+-                                 left: "8.88212%"
++                                 top: "25.718069249383912%"
+-                                 top: "70.7326%"
++                                 width: 2.5817098421262883
+-                                 width: "2.50932px"
++                                 height: 2.5817098421262883
+-                                 height: "2.50932px"
++                                 opacity: 0.24101003478330024
+-                                 opacity: "0.237649"
++                                 animation: "twinkle 2.150248190060362s ease-in-out infinite"
++                                 animationDelay: "1.504681774830634s"
+-                                 animation-duration: "1.85438s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.22218s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "69.80586831639086%"
+-                                 left: "13.3565%"
++                                 top: "10.364666348353758%"
+-                                 top: "0.193278%"
++                                 width: 2.20054109082817
+-                                 width: "3.75286px"
++                                 height: 2.20054109082817
+-                                 height: "3.75286px"
++                                 opacity: 0.3495349744158475
+-                                 opacity: "0.480265"
++                                 animation: "twinkle 2.8836094965541688s ease-in-out infinite"
++                                 animationDelay: "0.9360623022421831s"
+-                                 animation-duration: "1.83271s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "0.668105s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "31.771180324336832%"
+-                                 left: "99.0595%"
++                                 top: "3.7177522571634536%"
+-                                 top: "15.0818%"
++                                 width: 1.7152209246081145
+-                                 width: "1.45972px"
++                                 height: 1.7152209246081145
+-                                 height: "1.45972px"
++                                 opacity: 0.43545665316984505
+-                                 opacity: "0.26895"
++                                 animation: "twinkle 1.6508822318195084s ease-in-out infinite"
++                                 animationDelay: "1.8349863648411833s"
+-                                 animation-duration: "1.14291s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.23738s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "82.86060962265577%"
+-                                 left: "80.4617%"
++                                 top: "55.021167340864764%"
+-                                 top: "75.8238%"
++                                 width: 1.195683643741925
+-                                 width: "2.34599px"
++                                 height: 1.195683643741925
+-                                 height: "2.34599px"
++                                 opacity: 0.24108799273260373
+-                                 opacity: "0.544859"
++                                 animation: "twinkle 1.6039869503979112s ease-in-out infinite"
++                                 animationDelay: "2.205654106493361s"
+-                                 animation-duration: "2.73016s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "1.35056s"
+                                }}
+                              >
+                              <div
+                                className="absolute bg-white rounded-full"
+                                style={{
++                                 left: "77.27279179614922%"
+-                                 left: "96.9669%"
++                                 top: "65.46133975697673%"
+-                                 top: "22.1599%"
++                                 width: 3.7515484384552535
+-                                 width: "3.42921px"
++                                 height: 3.7515484384552535
+-                                 height: "3.42921px"
++                                 opacity: 0.37920197319910137
+-                                 opacity: "0.254295"
++                                 animation: "twinkle 2.987685275474907s ease-in-out infinite"
++                                 animationDelay: "1.050003373800935s"
+-                                 animation-duration: "2.91747s"
+-                                 animation-timing-function: "ease-in-out"
+-                                 animation-iteration-count: "infinite"
+-                                 animation-direction: "normal"
+-                                 animation-fill-mode: "none"
+-                                 animation-play-state: "running"
+-                                 animation-name: "twinkle"
+-                                 animation-timeline: "auto"
+-                                 animation-range-start: "normal"
+-                                 animation-range-end: "normal"
+-                                 animation-delay: "2.9976s"
+                                }}
+                              >
+                          ...
+                      ...
+              ...
+            ...
+
+[07:55:49.732] Browser ERROR   Cannot update a component (`%s`) while rendering a different component (`%s`). To locate the bad setState() call inside `%s`, follow the stack trace as described in https://react.dev/link/setstate-in-render LoadingScreen PokeBallLoader PokeBallLoader
+[07:55:51.544] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:55:51.544] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:55:51.847] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:55:51.847] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:55:58.205] Server  LOG     ✓ Compiled in 21ms
+[07:55:59.327] Server  LOG     ✓ Compiled in 15ms
+[07:56:02.688] Server  LOG     ✓ Compiled in 10ms
+[07:56:06.377] Server  LOG     ✓ Compiled in 15ms
+[07:56:20.148] Server  LOG     ✓ Compiled in 16ms
+[07:56:21.474] Server  LOG     ✓ Compiled in 30ms
+[07:57:30.222] Server  LOG     ✓ Compiled in 17ms
+[07:57:31.674] Server  LOG     ✓ Compiled in 19ms
+[07:57:42.402] Server  LOG     ✓ Compiled in 17ms
+[07:57:46.352] Server  LOG     ✓ Compiled in 12ms
+[07:58:12.520] Server  LOG     ✓ Compiled in 18ms
+[07:58:15.339] Server  LOG     ✓ Compiled in 11ms
+[07:59:25.492] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:25.492] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:26.299] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:26.299] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:27.134] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:27.134] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:27.855] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:27.855] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:28.232] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:28.232] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:28.849] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:28.849] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:30.031] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:30.031] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:31.267] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:31.267] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:33.294] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:33.294] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:33.906] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[07:59:33.906] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NEED TO BE DONE
+[08:00:32.445] Server  LOG     ✓ Compiled in 26ms
+[08:00:38.564] Server  LOG     ✓ Compiled in 11ms
+[08:00:42.948] Server  LOG     ✓ Compiled in 17ms
+[08:00:49.690] Server  LOG     ✓ Compiled in 15ms
+[08:01:00.668] Server  LOG     ✓ Compiled in 9ms
+[08:01:05.389] Server  LOG     ✓ Compiled in 17ms
+[08:01:46.632] Server  LOG     ✓ Compiled in 17ms

@@ -321,7 +321,7 @@ const TitleScreen = ({ onStart, isSmall = false }: { onStart: () => void; isSmal
           animate={{ scale: [1, 1.02, 1] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
-          TRAINER.IO
+          FELIX.WEB
         </motion.div>
         <div className="text-sm text-yellow-300 tracking-[0.3em] mb-6">VERSION 1.0</div>
 
@@ -449,8 +449,8 @@ const MenuScreen = ({
             <UserIcon className="text-retro-beige" />
           </div>
           <div>
-            <div className="text-retro-beige font-bold text-sm">TRAINER</div>
-            <div className="text-retro-yellow text-xs">Lv.25</div>
+            <div className="text-retro-beige font-bold text-sm">FELIX</div>
+            <div className="text-retro-yellow text-xs">Lv.23</div>
           </div>
         </div>
       </div>
@@ -500,7 +500,7 @@ const MenuScreen = ({
       {/* Footer */}
       <div className="absolute bottom-2 left-2 right-2 flex justify-between text-[10px] text-retro-beige/40">
         <span>MEM: 256K</span>
-        <span>© 2024</span>
+        <span>© 2026</span>
       </div>
     </div>
   );
@@ -749,7 +749,7 @@ const GBAComponent = ({
             {/* Brand text */}
             <div className="text-center mt-2">
               <span className="text-xs font-bold text-purple-200 tracking-[0.3em]">
-                NINTENDO
+                Nintendium
               </span>
             </div>
 
