@@ -1,0 +1,201 @@
+/* [project]/src/components/PokeBallLoader.css [app-client] (css) */
+.pixel-font {
+  font-family: var(--font-pixel), "Courier New", monospace;
+  letter-spacing: .05em;
+}
+
+.poke-loader-container {
+  font-family: var(--font-pixel), "Courier New", monospace;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+}
+
+.poke-ball-wrapper {
+  width: 80px;
+  height: 80px;
+  transition: transform .2s ease-out;
+  position: relative;
+}
+
+.poke-ball-pixel {
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 4px 8px #0000004d);
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+
+  10% {
+    transform: rotate(-30deg);
+  }
+
+  20% {
+    transform: rotate(25deg);
+  }
+
+  30% {
+    transform: rotate(-20deg);
+  }
+
+  40% {
+    transform: rotate(15deg);
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+  }
+
+  70% {
+    transform: rotate(-3deg);
+  }
+
+  80% {
+    transform: rotate(2deg);
+  }
+
+  90% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.shaking {
+  animation: .8s cubic-bezier(.36, .07, .19, .97) infinite shake;
+}
+
+.neutral {
+  transform: rotate(0);
+}
+
+.loading-text {
+  color: var(--retro-beige);
+  text-align: center;
+  font-size: 12px;
+  animation: 1s infinite blink;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  51%, 100% {
+    opacity: .5;
+  }
+}
+
+.success-text {
+  color: var(--retro-yellow);
+  text-align: center;
+  font-size: 16px;
+  animation: .3s ease-out success-pop;
+}
+
+@keyframes success-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.poke-loader-container .health-bar {
+  width: 160px;
+  margin-top: 8px;
+}
+
+.poke-loader-container .health-bar-fill {
+  background: linear-gradient(to bottom, #7fff7f, var(--retro-green));
+}
+
+.stars-container {
+  pointer-events: none;
+  opacity: 0;
+  width: 120px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pixel-stars-image {
+  width: 100%;
+  height: 100%;
+  image-rendering: pixelated;
+  animation: 1s ease-out forwards stars-pop;
+}
+
+.stars-container.visible {
+  opacity: 1;
+}
+
+.stars-container.visible .pixel-stars-image {
+  animation: 1s ease-out forwards stars-pop;
+}
+
+@keyframes stars-pop {
+  0% {
+    opacity: 0;
+    transform: scale(.2)translateY(30px);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1)translateY(-5px);
+  }
+
+  70% {
+    opacity: 1;
+    transform: scale(.95)translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1)translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .poke-ball-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .poke-loader-container .health-bar {
+    width: 120px;
+  }
+
+  .stars-container {
+    width: 90px;
+    height: 45px;
+  }
+}
+
+/*# sourceMappingURL=src_components_PokeBallLoader_1054262f.css.map*/

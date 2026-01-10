@@ -7,14 +7,13 @@ export default function About() {
   const [moveCooldown, setMoveCooldown] = useState(false);
 
   const skills = [
-    { name: "REACT", power: 40, type: "tech", icon: "⚛️" },
-    { name: "TYPESCRIPT", power: 50, type: "tech", icon: "📘" },
-    { name: "NEXT.JS", power: 45, type: "tech", icon: "🟢" },
-    { name: "TAILWIND", power: 35, type: "tech", icon: "🎨" },
-    { name: "NODE.JS", power: 40, type: "tech", icon: "🟢" },
-    { name: "PYTHON", power: 55, type: "tech", icon: "🐍" },
-    { name: "GIT", power: 30, type: "tech", icon: "📝" },
-    { name: "FIGMA", power: 25, type: "design", icon: "🎯" },
+    { name: "PYTHON", power: 55, type: "tech", icon: "python/python-original.svg" },
+    { name: "R", power: 50, type: "tech", icon: "r/r-original.svg" },
+    { name: "React", power: 40, type: "tech", icon: "react/react-original.svg" },
+    { name: "NEXT.JS", power: 45, type: "tech", icon: "nextjs/nextjs-original.svg" },
+    { name: "TAILWIND", power: 35, type: "tech", icon: "tailwindcss/tailwindcss-original.svg" },
+    { name: "NODE.JS", power: 40, type: "tech", icon: "nodejs/nodejs-original.svg" },
+    { name: "GIT", power: 30, type: "tech", icon: "git/git-original.svg" }
   ];
 
   const playerStats = [
@@ -68,7 +67,7 @@ export default function About() {
             {/* Trainer Name */}
             <div className="text-center mb-6">
               <div className="bg-pokemon-yellow inline-block px-6 py-2 rounded-lg font-bold text-xl border-2 border-pokemon-yellow-dark">
-                TRAINER
+                Felix Li 
               </div>
               <p className="text-sm text-gray-600 mt-2">Full Stack Developer</p>
             </div>
@@ -77,11 +76,11 @@ export default function About() {
             <div className="space-y-3">
               {playerStats.map((stat) => (
                 <div key={stat.label} className="flex items-center gap-3">
-                  <span className="w-16 font-bold text-sm text-pokemon-brown">
+                  <span className="w-14 font-bold text-xs text-pokemon-brown">
                     {stat.label}
                   </span>
-                  <div className="flex-1">
-                    <div className="bg-gray-300 rounded-full h-4 border-2 border-gray-400">
+                  <div className="w-85">
+                    <div className="bg-gray-300 rounded-full h-3 border-2 border-gray-400">
                       <div
                         className={`h-full ${
                           stat.label === "HP"
@@ -98,7 +97,7 @@ export default function About() {
                       />
                     </div>
                   </div>
-                  <span className="w-16 text-right font-mono">
+                  <span className="w-14 text-left font-bold text-pokemon-dark text-[10px]">
                     {stat.value}
                     {stat.max && `/${stat.max}`}
                   </span>
@@ -110,16 +109,23 @@ export default function About() {
             <div className="mt-6 pt-4 border-t-2 border-gray-300">
               <p className="text-sm font-bold mb-3">BADGES COLLECTED:</p>
               <div className="flex gap-2 justify-center flex-wrap">
-                {["🔥", "💧", "⚡", "🌿", "❄️", "☀️", "🔮", "👻"].map(
-                  (badge, i) => (
-                    <span
-                      key={i}
-                      className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center text-2xl border-2 border-gray-400"
-                    >
-                      {badge}
-                    </span>
-                  )
-                )}
+                {[
+                  { name: "FIRE", color: "bg-red-500", letter: "F" },
+                  { name: "WATER", color: "bg-blue-500", letter: "W" },
+                  { name: "ELECTRIC", color: "bg-yellow-400", letter: "E" },
+                  { name: "GRASS", color: "bg-green-500", letter: "G" },
+                  { name: "ICE", color: "bg-cyan-400", letter: "I" },
+                  { name: "FAIRY", color: "bg-pink-400", letter: "Y" },
+                  { name: "PSYCHIC", color: "bg-purple-500", letter: "P" },
+                  { name: "GHOST", color: "bg-gray-600", letter: "H" }
+                ].map((badge, i) => (
+                  <div
+                    key={i}
+                    className={`w-10 h-10 rounded-full flex items-center justify-center border-2 border-gray-400 ${badge.color}`}
+                  >
+                    <span className="text-white font-bold text-sm">{badge.letter}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -150,13 +156,17 @@ export default function About() {
                   >
                     {/* Pokemon Icon */}
                     <div
-                      className={`w-12 h-12 rounded-full flex items-center justify-center text-2xl ${
+                      className={`w-12 h-12 rounded-full flex items-center justify-center ${
                         selectedPokemon === index
                           ? "bg-pokemon-yellow-dark"
                           : "bg-pokemon-cream/20"
                       }`}
                     >
-                      {skill.icon}
+                      <img
+                        src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.icon}`}
+                        alt={skill.name}
+                        className="w-8 h-8"
+                      />
                     </div>
 
                     {/* Skill Info */}
@@ -176,7 +186,7 @@ export default function About() {
                     {/* Power */}
                     <div className="text-right">
                       <div className="text-xs text-gray-400">POWER</div>
-                      <div className="font-bold text-pokemon-yellow">{skill.power}</div>
+                      <div className="font-bold text-retro-orange">{skill.power}</div>
                     </div>
                   </div>
                 ))}
