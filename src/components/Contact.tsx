@@ -13,9 +13,21 @@ export default function Contact() {
   const [selectedOption, setSelectedOption] = useState(0);
 
   const contactOptions = [
-    { icon: "email", label: "EMAIL", value: "lifelix1209@outlook.com" },
-    { icon: "location", label: "LOCATION", value: "CAMBRIDGE" },
-    { icon: "website", label: "WEBSITE", value: "Pokemon Master Journey of Felix" },
+    { 
+      icon: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/harbor-mail.png", 
+      label: "EMAIL", 
+      value: "lifelix1209@outlook.com" 
+    },
+    { 
+      icon: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/town-map.png", 
+      label: "LOCATION", 
+      value: "CAMBRIDGE" 
+    },
+    { 
+      icon: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/teachy-tv.png", 
+      label: "WEBSITE", 
+      value: "Pokemon Master Journey of Felix" 
+    },
   ];
 
   const handleSubmit = async (e: FormEvent) => {
@@ -56,7 +68,17 @@ export default function Contact() {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-pokemon-yellow pokemon-text mb-4">
-            📞 POKéMON CENTER 📞
+            <img 
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" 
+              alt="pokeball" 
+              className="inline-block w-8 h-8 mr-2" 
+            />
+            POKéMON CENTER
+            <img 
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" 
+              alt="pokeball" 
+              className="inline-block w-8 h-8 ml-2" 
+            />
           </h2>
           <div className="w-48 h-1 bg-pokemon-red mx-auto" />
         </div>
@@ -67,7 +89,11 @@ export default function Contact() {
             {/* Pokedex Header */}
             <div className="flex items-center gap-4 mb-6">
               <div className="w-16 h-16 bg-pokemon-blue rounded-full border-4 border-pokemon-blue-dark flex items-center justify-center">
-                <span className="text-3xl animate-pulse">📡</span>
+                <img 
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/exp-share.png" 
+                  alt="communication" 
+                  className="w-10 h-10 animate-pulse" 
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-pokemon-cream">
@@ -95,13 +121,23 @@ export default function Contact() {
                   `}
                   onClick={() => setSelectedOption(index)}
                 >
-                  <span className="text-2xl">{option.icon}</span>
+                  <div className="w-8 h-8 flex items-center justify-center">
+                    <img
+                      src={option.icon}
+                      alt={option.label}
+                      className="w-8 h-8"
+                    />
+                  </div>
                   <div className="flex-1">
                     <div className="font-bold text-sm">{option.label}</div>
                     <div className="text-xs opacity-70">{option.value}</div>
                   </div>
                   {selectedOption === index && (
-                    <span className="text-pokemon-dark">▶</span>
+                    <img 
+                      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png" 
+                      alt="selected" 
+                      className="w-6 h-6" 
+                    />
                   )}
                 </div>
               ))}
@@ -114,18 +150,40 @@ export default function Contact() {
               </p>
               <div className="flex justify-center gap-4">
                 {[
-                  { icon: "🐙", label: "GITHUB", url: "#" },
-                  { icon: "💼", label: "LINKEDIN", url: "#" },
-                  { icon: "🐦", label: "TWITTER", url: "#" },
-                  { icon: "📷", label: "INSTAGRAM", url: "#" },
+                  { 
+                    icon: "https://cdn.simpleicons.org/github/181717", 
+                    label: "GITHUB", 
+                    url: "https://github.com" 
+                  },
+                  {
+                    icon: "/assets/icons/linkedin.svg",
+                    label: "LINKEDIN",
+                    url: "https://linkedin.com"
+                  },
+                  { 
+                    icon: "https://cdn.simpleicons.org/x/000000", 
+                    label: "X/TWITTER", 
+                    url: "https://twitter.com" 
+                  },
+                  { 
+                    icon: "https://cdn.simpleicons.org/instagram/E4405F", 
+                    label: "INSTAGRAM", 
+                    url: "https://instagram.com" 
+                  },
                 ].map((social) => (
                   <a
                     key={social.label}
                     href={social.url}
-                    className="w-12 h-12 bg-pokemon-yellow rounded-full flex items-center justify-center text-2xl border-2 border-pokemon-yellow-dark hover:scale-110 transition-transform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-white rounded-full flex items-center justify-center border-2 border-pokemon-yellow-dark hover:scale-110 transition-transform shadow-lg"
                     title={social.label}
                   >
-                    {social.icon}
+                    <img
+                      src={social.icon}
+                      alt={social.label}
+                      className="w-7 h-7"
+                    />
                   </a>
                 ))}
               </div>
@@ -137,7 +195,11 @@ export default function Contact() {
             {/* Form Header */}
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 bg-pokemon-cream rounded-full flex items-center justify-center border-4 border-pokemon-brown">
-                <span className="text-xl">✉️</span>
+                <img 
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/letter.png" 
+                  alt="mail" 
+                  className="w-8 h-8" 
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-pokemon-cream">
@@ -152,7 +214,11 @@ export default function Contact() {
             {/* Message Form */}
             {messageStatus === "sent" ? (
               <div className="dialog-box p-8 text-center">
-                <div className="text-6xl mb-4">✅</div>
+                <img 
+                  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/potion.png" 
+                  alt="success" 
+                  className="w-20 h-20 mx-auto mb-4" 
+                />
                 <h4 className="text-xl font-bold text-pokemon-dark mb-2">
                   MESSAGE SENT!
                 </h4>
@@ -170,7 +236,12 @@ export default function Contact() {
               <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Name Input */}
                 <div>
-                  <label className="block text-pokemon-cream text-sm font-bold mb-2">
+                  <label className="block text-pokemon-cream text-sm font-bold mb-2 flex items-center gap-2">
+                    <img 
+                      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/vs-recorder.png" 
+                      alt="name" 
+                      className="w-5 h-5" 
+                    />
                     YOUR NAME
                   </label>
                   <input
@@ -186,7 +257,12 @@ export default function Contact() {
 
                 {/* Email Input */}
                 <div>
-                  <label className="block text-pokemon-cream text-sm font-bold mb-2">
+                  <label className="block text-pokemon-cream text-sm font-bold mb-2 flex items-center gap-2">
+                    <img 
+                      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wave-mail.png" 
+                      alt="email" 
+                      className="w-5 h-5" 
+                    />
                     EMAIL ADDRESS
                   </label>
                   <input
@@ -202,7 +278,12 @@ export default function Contact() {
 
                 {/* Message Input */}
                 <div>
-                  <label className="block text-pokemon-cream text-sm font-bold mb-2">
+                  <label className="block text-pokemon-cream text-sm font-bold mb-2 flex items-center gap-2">
+                    <img 
+                      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/bead-mail.png" 
+                      alt="message" 
+                      className="w-5 h-5" 
+                    />
                     MESSAGE
                   </label>
                   <textarea
@@ -232,12 +313,20 @@ export default function Contact() {
                 >
                   {isSending ? (
                     <span className="flex items-center justify-center gap-2">
-                      <span className="animate-spin">🔄</span>
+                      <img 
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/safari-ball.png" 
+                        alt="sending" 
+                        className="w-6 h-6 animate-spin" 
+                      />
                       SENDING...
                     </span>
                   ) : (
                     <span className="flex items-center justify-center gap-2">
-                      <span>📤</span>
+                      <img 
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/vs-seeker.png" 
+                        alt="send" 
+                        className="w-6 h-6" 
+                      />
                       SEND MESSAGE
                     </span>
                   )}
@@ -257,8 +346,14 @@ export default function Contact() {
         {/* Footer */}
         <div className="mt-12 text-center">
           <div className="inline-block bg-pokemon-cream/10 border-2 border-pokemon-cream/30 rounded-lg px-6 py-3">
-            <p className="text-pokemon-cream text-sm">
-              Made with ⚡ by TRAINER.IO | © 2024
+            <p className="text-pokemon-cream text-sm flex items-center justify-center gap-2">
+              Made with 
+              <img 
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heart-scale.png" 
+                alt="love" 
+                className="inline-block w-5 h-5" 
+              /> 
+              by FELIX.INFO | © 2026
             </p>
           </div>
         </div>

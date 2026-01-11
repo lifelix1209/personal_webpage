@@ -3797,17 +3797,17 @@ function Contact() {
     const [selectedOption, setSelectedOption] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const contactOptions = [
         {
-            icon: "email",
+            icon: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/harbor-mail.png",
             label: "EMAIL",
             value: "lifelix1209@outlook.com"
         },
         {
-            icon: "location",
+            icon: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/town-map.png",
             label: "LOCATION",
             value: "CAMBRIDGE"
         },
         {
-            icon: "website",
+            icon: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/teachy-tv.png",
             label: "WEBSITE",
             value: "Pokemon Master Journey of Felix"
         }
@@ -3845,12 +3845,12 @@ function Contact() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/src/components/Contact.tsx",
-                    lineNumber: 50,
+                    lineNumber: 62,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Contact.tsx",
-                lineNumber: 49,
+                lineNumber: 61,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3861,23 +3861,43 @@ function Contact() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "text-4xl font-bold text-pokemon-yellow pokemon-text mb-4",
-                                children: "📞 POKéMON CENTER 📞"
-                            }, void 0, false, {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                        src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png",
+                                        alt: "pokeball",
+                                        className: "inline-block w-8 h-8 mr-2"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Contact.tsx",
+                                        lineNumber: 71,
+                                        columnNumber: 13
+                                    }, this),
+                                    "POKéMON CENTER",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                        src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png",
+                                        alt: "pokeball",
+                                        className: "inline-block w-8 h-8 ml-2"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Contact.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/components/Contact.tsx",
-                                lineNumber: 58,
+                                lineNumber: 70,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "w-48 h-1 bg-pokemon-red mx-auto"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Contact.tsx",
-                                lineNumber: 61,
+                                lineNumber: 83,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Contact.tsx",
-                        lineNumber: 57,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3891,17 +3911,18 @@ function Contact() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "w-16 h-16 bg-pokemon-blue rounded-full border-4 border-pokemon-blue-dark flex items-center justify-center",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-3xl animate-pulse",
-                                                    children: "📡"
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                    src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/exp-share.png",
+                                                    alt: "communication",
+                                                    className: "w-10 h-10 animate-pulse"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Contact.tsx",
-                                                    lineNumber: 70,
+                                                    lineNumber: 92,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 69,
+                                                lineNumber: 91,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3911,7 +3932,7 @@ function Contact() {
                                                         children: "COMMUNICATION"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 73,
+                                                        lineNumber: 99,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3919,19 +3940,19 @@ function Contact() {
                                                         children: "Get in touch with me"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 76,
+                                                        lineNumber: 102,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 72,
+                                                lineNumber: 98,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Contact.tsx",
-                                        lineNumber: 68,
+                                        lineNumber: 90,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3944,12 +3965,20 @@ function Contact() {
                   `,
                                                 onClick: ()=>setSelectedOption(index),
                                                 children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-2xl",
-                                                        children: option.icon
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "w-8 h-8 flex items-center justify-center",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                            src: option.icon,
+                                                            alt: option.label,
+                                                            className: "w-8 h-8"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Contact.tsx",
+                                                            lineNumber: 125,
+                                                            columnNumber: 21
+                                                        }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 98,
+                                                        lineNumber: 124,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3960,7 +3989,7 @@ function Contact() {
                                                                 children: option.label
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                                lineNumber: 100,
+                                                                lineNumber: 132,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3968,32 +3997,33 @@ function Contact() {
                                                                 children: option.value
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                                lineNumber: 101,
+                                                                lineNumber: 133,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 99,
+                                                        lineNumber: 131,
                                                         columnNumber: 19
                                                     }, this),
-                                                    selectedOption === index && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "text-pokemon-dark",
-                                                        children: "▶"
+                                                    selectedOption === index && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/tm-normal.png",
+                                                        alt: "selected",
+                                                        className: "w-6 h-6"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 104,
+                                                        lineNumber: 136,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, option.label, true, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 85,
+                                                lineNumber: 111,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Contact.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 109,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4004,57 +4034,67 @@ function Contact() {
                                                 children: "SOCIAL NETWORKS"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 112,
+                                                lineNumber: 148,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex justify-center gap-4",
                                                 children: [
                                                     {
-                                                        icon: "🐙",
+                                                        icon: "https://cdn.simpleicons.org/github/181717",
                                                         label: "GITHUB",
-                                                        url: "#"
+                                                        url: "https://github.com"
                                                     },
                                                     {
-                                                        icon: "💼",
+                                                        icon: "/assets/icons/linkedin.svg",
                                                         label: "LINKEDIN",
-                                                        url: "#"
+                                                        url: "https://linkedin.com"
                                                     },
                                                     {
-                                                        icon: "🐦",
-                                                        label: "TWITTER",
-                                                        url: "#"
+                                                        icon: "https://cdn.simpleicons.org/x/000000",
+                                                        label: "X/TWITTER",
+                                                        url: "https://twitter.com"
                                                     },
                                                     {
-                                                        icon: "📷",
+                                                        icon: "https://cdn.simpleicons.org/instagram/E4405F",
                                                         label: "INSTAGRAM",
-                                                        url: "#"
+                                                        url: "https://instagram.com"
                                                     }
                                                 ].map((social)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                         href: social.url,
-                                                        className: "w-12 h-12 bg-pokemon-yellow rounded-full flex items-center justify-center text-2xl border-2 border-pokemon-yellow-dark hover:scale-110 transition-transform",
+                                                        target: "_blank",
+                                                        rel: "noopener noreferrer",
+                                                        className: "w-12 h-12 bg-white rounded-full flex items-center justify-center border-2 border-pokemon-yellow-dark hover:scale-110 transition-transform shadow-lg",
                                                         title: social.label,
-                                                        children: social.icon
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                            src: social.icon,
+                                                            alt: social.label,
+                                                            className: "w-7 h-7"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/Contact.tsx",
+                                                            lineNumber: 182,
+                                                            columnNumber: 21
+                                                        }, this)
                                                     }, social.label, false, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 122,
+                                                        lineNumber: 174,
                                                         columnNumber: 19
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 151,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Contact.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 147,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Contact.tsx",
-                                lineNumber: 66,
+                                lineNumber: 88,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4065,17 +4105,18 @@ function Contact() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "w-12 h-12 bg-pokemon-cream rounded-full flex items-center justify-center border-4 border-pokemon-brown",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "text-xl",
-                                                    children: "✉️"
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                    src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/letter.png",
+                                                    alt: "mail",
+                                                    className: "w-8 h-8"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/Contact.tsx",
-                                                    lineNumber: 140,
+                                                    lineNumber: 198,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 139,
+                                                lineNumber: 197,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4085,7 +4126,7 @@ function Contact() {
                                                         children: "SEND MESSAGE"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 143,
+                                                        lineNumber: 205,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4093,30 +4134,31 @@ function Contact() {
                                                         children: "I'll reply at Lv. Speed"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 146,
+                                                        lineNumber: 208,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 142,
+                                                lineNumber: 204,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Contact.tsx",
-                                        lineNumber: 138,
+                                        lineNumber: 196,
                                         columnNumber: 13
                                     }, this),
                                     messageStatus === "sent" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "dialog-box p-8 text-center",
                                         children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "text-6xl mb-4",
-                                                children: "✅"
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/potion.png",
+                                                alt: "success",
+                                                className: "w-20 h-20 mx-auto mb-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 155,
+                                                lineNumber: 217,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -4124,7 +4166,7 @@ function Contact() {
                                                 children: "MESSAGE SENT!"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 156,
+                                                lineNumber: 222,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4132,7 +4174,7 @@ function Contact() {
                                                 children: "Your message has been received. I'll respond as soon as possible!"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 159,
+                                                lineNumber: 225,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4141,13 +4183,13 @@ function Contact() {
                                                 children: "SEND ANOTHER"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 162,
+                                                lineNumber: 228,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Contact.tsx",
-                                        lineNumber: 154,
+                                        lineNumber: 216,
                                         columnNumber: 15
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                                         onSubmit: handleSubmit,
@@ -4156,11 +4198,22 @@ function Contact() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block text-pokemon-cream text-sm font-bold mb-2",
-                                                        children: "YOUR NAME"
-                                                    }, void 0, false, {
+                                                        className: "block text-pokemon-cream text-sm font-bold mb-2 flex items-center gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/vs-recorder.png",
+                                                                alt: "name",
+                                                                className: "w-5 h-5"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Contact.tsx",
+                                                                lineNumber: 240,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            "YOUR NAME"
+                                                        ]
+                                                    }, void 0, true, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 173,
+                                                        lineNumber: 239,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4173,23 +4226,34 @@ function Contact() {
                                                         placeholder: "Enter your name..."
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 176,
+                                                        lineNumber: 247,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 172,
+                                                lineNumber: 238,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block text-pokemon-cream text-sm font-bold mb-2",
-                                                        children: "EMAIL ADDRESS"
-                                                    }, void 0, false, {
+                                                        className: "block text-pokemon-cream text-sm font-bold mb-2 flex items-center gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/wave-mail.png",
+                                                                alt: "email",
+                                                                className: "w-5 h-5"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Contact.tsx",
+                                                                lineNumber: 261,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            "EMAIL ADDRESS"
+                                                        ]
+                                                    }, void 0, true, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 189,
+                                                        lineNumber: 260,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -4202,23 +4266,34 @@ function Contact() {
                                                         placeholder: "your@email.com"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 192,
+                                                        lineNumber: 268,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 188,
+                                                lineNumber: 259,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        className: "block text-pokemon-cream text-sm font-bold mb-2",
-                                                        children: "MESSAGE"
-                                                    }, void 0, false, {
+                                                        className: "block text-pokemon-cream text-sm font-bold mb-2 flex items-center gap-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                                src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/bead-mail.png",
+                                                                alt: "message",
+                                                                className: "w-5 h-5"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/Contact.tsx",
+                                                                lineNumber: 282,
+                                                                columnNumber: 21
+                                                            }, this),
+                                                            "MESSAGE"
+                                                        ]
+                                                    }, void 0, true, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 205,
+                                                        lineNumber: 281,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -4231,13 +4306,13 @@ function Contact() {
                                                         placeholder: "Write your message..."
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/Contact.tsx",
-                                                        lineNumber: 208,
+                                                        lineNumber: 289,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 204,
+                                                lineNumber: 280,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4251,46 +4326,49 @@ function Contact() {
                                                 children: isSending ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "flex items-center justify-center gap-2",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "animate-spin",
-                                                            children: "🔄"
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                            src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/safari-ball.png",
+                                                            alt: "sending",
+                                                            className: "w-6 h-6 animate-spin"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Contact.tsx",
-                                                            lineNumber: 235,
+                                                            lineNumber: 316,
                                                             columnNumber: 23
                                                         }, this),
                                                         "SENDING..."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Contact.tsx",
-                                                    lineNumber: 234,
+                                                    lineNumber: 315,
                                                     columnNumber: 21
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "flex items-center justify-center gap-2",
                                                     children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            children: "📤"
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                            src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/vs-seeker.png",
+                                                            alt: "send",
+                                                            className: "w-6 h-6"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/Contact.tsx",
-                                                            lineNumber: 240,
+                                                            lineNumber: 325,
                                                             columnNumber: 23
                                                         }, this),
                                                         "SEND MESSAGE"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/Contact.tsx",
-                                                    lineNumber: 239,
+                                                    lineNumber: 324,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 220,
+                                                lineNumber: 301,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Contact.tsx",
-                                        lineNumber: 170,
+                                        lineNumber: 236,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4300,39 +4378,39 @@ function Contact() {
                                                 className: "w-3 h-3 rounded-full bg-pokemon-red animate-pulse"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 250,
+                                                lineNumber: 339,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "w-3 h-3 rounded-full bg-pokemon-yellow animate-pulse delay-100"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 251,
+                                                lineNumber: 340,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "w-3 h-3 rounded-full bg-pokemon-green animate-pulse delay-200"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Contact.tsx",
-                                                lineNumber: 252,
+                                                lineNumber: 341,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Contact.tsx",
-                                        lineNumber: 249,
+                                        lineNumber: 338,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Contact.tsx",
-                                lineNumber: 136,
+                                lineNumber: 194,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Contact.tsx",
-                        lineNumber: 64,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4340,33 +4418,45 @@ function Contact() {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "inline-block bg-pokemon-cream/10 border-2 border-pokemon-cream/30 rounded-lg px-6 py-3",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-pokemon-cream text-sm",
-                                children: "Made with ⚡ by TRAINER.IO | © 2024"
-                            }, void 0, false, {
+                                className: "text-pokemon-cream text-sm flex items-center justify-center gap-2",
+                                children: [
+                                    "Made with",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                        src: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/heart-scale.png",
+                                        alt: "love",
+                                        className: "inline-block w-5 h-5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Contact.tsx",
+                                        lineNumber: 351,
+                                        columnNumber: 15
+                                    }, this),
+                                    "by FELIX.INFO | © 2026"
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/src/components/Contact.tsx",
-                                lineNumber: 260,
+                                lineNumber: 349,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/Contact.tsx",
-                            lineNumber: 259,
+                            lineNumber: 348,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/Contact.tsx",
-                        lineNumber: 258,
+                        lineNumber: 347,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Contact.tsx",
-                lineNumber: 55,
+                lineNumber: 67,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Contact.tsx",
-        lineNumber: 44,
+        lineNumber: 56,
         columnNumber: 5
     }, this);
 }
